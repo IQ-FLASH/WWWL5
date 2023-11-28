@@ -261,7 +261,7 @@ async def upstream(event):
             f"**• انت تستخدم التنصيب يدويا يرجى ارسال امر** `{cmdhd}تحديث الان`",
         )
     event = await edit_or_reply(event, "**- جار جلب ملفات السورس يرجى الانتظار قليلا**")
-    off_repo = "https://github.com/SOURCE-SPIDER/TELEHON"
+    off_repo = "https://github.com/SOURCE-FLASH/TELEHON"
     os.chdir("/app")
     try:
         txt = "**• لقد حدث خطأ اثناء التحديث**" + "**لقد حدث خطأ ما**\n"

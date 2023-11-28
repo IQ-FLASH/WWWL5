@@ -138,7 +138,7 @@ async def hunterusername(event):
     try:
         ch = await WWWL5(
             functions.channels.CreateChannelRequest(
-                title="SPIDER HUNTER - صيد فلاش",
+                title="FLASH HUNTER - صيد فلاش",
                 about="This channel to hunt username by - @FLS_44 ",
             )
         )
@@ -208,7 +208,7 @@ async def _(event):
         try:
             ch = await WWWL5(
                 functions.channels.CreateChannelRequest(
-                    title="SPIDER HUNTER - صيد فلاش",
+                    title="FLASH HUNTER - صيد فلاش",
                     about="This channel to hunt username by - @FLS_44 ",
                 )
             )

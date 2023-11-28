@@ -7,8 +7,8 @@
 # الملــف محمــي بحقــوق النشـــر والملـكيـه
 # تخمــط بــدون ذكــر المصــدر ابلــع حســابـك بانـــد
 """ 
-CC Checker & Generator for SPIDER™ t.me/EE_20
-Write file by t.me/WWWL5
+CC Checker & Generator for FLASH™ t.me/FLS_44
+Write file by t.me/P_O28
 hhh o ya beby
 
 """

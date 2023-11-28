@@ -42,7 +42,7 @@ async def permalink(mention):
         return
     if user.id == 5656828413:
         return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
-    if user.id == 169561:
+    if user.id == 5627420357:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
     if user.id == 203585:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
@@ -72,7 +72,7 @@ async def permalink(mention):
         return
     if user.id == 5656828413:
         return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
-    if user.id == 2033585:
+    if user.id == 5627420357:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
     if user.id == 676943:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور **")
@@ -90,7 +90,7 @@ async def permalink(mention):
         return
     if user.id == 5656828413:
         return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
-    if user.id == 169561:
+    if user.id == 5627420357:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
     if user.id == 203485:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
@@ -114,7 +114,7 @@ async def permalink(mention):
         return
     if user.id == 5656828413:
         return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
-    if user.id == 169561:
+    if user.id == 5627420357:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور **")
     if user.id == 203585:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
@@ -142,7 +142,7 @@ async def permalink(mention):
         return
     if user.id == 5656828413:
         return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
-    if user.id == 169561:
+    if user.id == 5627420357:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور زلمة وعلى راسك**")
     if user.id == 203585:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور زلمة وعلى راسك**")
@@ -197,7 +197,7 @@ async def permalink(mention):
         return
     if user.id == 5656828413:
         return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
-    if user.id == 166561:
+    if user.id == 5627420357:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
     if user.id == 203445:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
@@ -237,7 +237,7 @@ async def permalink(mention):
         return
     if user.id == 5656828413:
         return await edit_or_reply(mention, f"**100%**")
-    if user.id == 169561:
+    if user.id == 5627420357:
         return await edit_or_reply(mention, f"**100%**")
     if user.id == 203485:
         return await edit_or_reply(mention, f"**100%**")
@@ -292,7 +292,7 @@ async def rzfun(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 5627420357:
         return await edit_or_reply(mention, f"**⌔∮ عذرا هذا مطور السورس**")
     await edit_or_reply(mention, f"**نزوج وماتباوع على غيري 🥺💞 ܰ**")
 
@@ -302,6 +302,6 @@ async def mention(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 5627420357:
         return await edit_or_reply(mention, f"**⌔∮ عذرا هذا مطور السورس**")
     await edit_or_reply(mention, f"**طالق طالق بالعشرة 😹😭💕 ܰ**")

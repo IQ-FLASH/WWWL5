@@ -4,7 +4,7 @@ from WWWL5 import WWWL5
 
 from ..Config import Config
 
-ROZ_PIC = "https://telegra.ph/file/ba5e50feaff3c2bbde984.jpg"
+ROZ_PIC = "https://telegra.ph/file/06d02c6abd3aec8ac9569.jpg"
 RAZAN = Config.TG_BOT_USERNAME
 ROZ_T = (
     f"**مطور فلاش سبايدر **\n"

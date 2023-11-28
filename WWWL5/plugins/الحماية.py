@@ -20,7 +20,7 @@ from . import mention
 
 LOGS = logging.getLogger(__name__)
 cmdhd = Config.COMMAND_HAND_LER
-# ترجمه وكتابة فريق سبايدر
+# ترجمه وكتابة فريق فلاش
 
 
 async def do_pm_permit_action(event, chat):  # sourcery no-metrics
@@ -80,7 +80,7 @@ async def do_pm_permit_action(event, chat):  # sourcery no-metrics
                 totalwarns=totalwarns,
                 warns=warns,
                 remwarns=remwarns,
-            )  # ترجمه وكتابة فريق سبايدر
+            )  # ترجمه وكتابة فريق فلاش
         else:
             USER_BOT_WARN_ZERO = f"- حذࢪتك وكتلك لا تكࢪࢪ تَم حظࢪك بنجاح ما ٱكدر اخليك تزعج المالك \n- - بباي 🙁🤍"
         msg = await event.reply(USER_BOT_WARN_ZERO)
@@ -119,9 +119,9 @@ async def do_pm_permit_action(event, chat):  # sourcery no-metrics
             remwarns=remwarns,
         )
     elif gvarstatus("pmmenu") is None:
-        USER_BOT_NO_WARN = f"""◞اهٛلا : {mention}  🤍👋◟\n⩹⌯⊷━♢ ⦓ ᥉᥆υᖇᥴᥱ ᥉ρᎥժᥱᖇ ⦔ ♢━⊶⌯⩺\n◞ يمَڪטּ ﭑڪَـﯠَڼ نَـايـمَ ﺂۄِ مَشِغوݪ 🕷 ˛\n\n◞ﭑتَࢪِك ࢪَسِـاࢦتَڪ ﯠَ ﺂنتَظࢪَ اݪـࢪَډ 🕷 ˛\n\n◞لَآ تٌـگـرࢪ ࢪسِـآئلَکْ لَکْيَ لَآ يَتٌمً حًظُرکْ 🕷 ˛\n\n◞قُـلَ سِبًبً مًجّيَئک  ﯠَ ﺂنتَظࢪَ حًتٌـيِّ أّعٌوٌدٍ 🕷˛\n\n⩹⌯⊷━♢ ⦓ ᥉᥆υᖇᥴᥱ ᥉ρᎥժᥱᖇ ⦔ ♢━⊶⌯⩺ \n⤶ ❨  {warns}/{totalwarns} ❩ عدد التحذيرات عدك : """
+        USER_BOT_NO_WARN = f"""◞اهٛلا : {mention}  🤍👋◟\n⩹⌯⊷━♢ ⦓ S̴O̴U̴R̴C̴E̴ F̴L̴A̴S̴H̴ ⦔ ♢━⊶⌯⩺\n◞ يمَڪטּ ﭑڪَـﯠَڼ نَـايـمَ ﺂۄِ مَشِغوݪ 🕷 ˛\n\n◞ﭑتَࢪِك ࢪَسِـاࢦتَڪ ﯠَ ﺂنتَظࢪَ اݪـࢪَډ 🕷 ˛\n\n◞لَآ تٌـگـرࢪ ࢪسِـآئلَکْ لَکْيَ لَآ يَتٌمً حًظُرکْ 🕷 ˛\n\n◞قُـلَ سِبًبً مًجّيَئک  ﯠَ ﺂنتَظࢪَ حًتٌـيِّ أّعٌوٌدٍ 🕷˛\n\n⩹⌯⊷━♢ ⦓ S̴O̴U̴R̴C̴E̴ F̴L̴A̴S̴H̴ ⦔ ♢━⊶⌯⩺ \n⤶ ❨  {warns}/{totalwarns} ❩ عدد التحذيرات عدك : """
     else:
-        USER_BOT_NO_WARN = f"""◞اهٛلا : {mention}  🤍👋◟\n⩹⌯⊷━♢ ⦓ ᥉᥆υᖇᥴᥱ ᥉ρᎥժᥱᖇ ⦔ ♢━⊶⌯⩺\n◞ يمَڪטּ ﭑڪَـﯠَڼ نَـايـمَ ﺂۄِ مَشِغوݪ 🕷 ˛\n\n◞ﭑتَࢪِك ࢪَسِـاࢦتَڪ ﯠَ ﺂنتَظࢪَ اݪـࢪَډ 🕷 ˛\n\n◞لَآ تٌـگـرࢪ ࢪسِـآئلَکْ لَکْيَ لَآ يَتٌمً حًظُرکْ 🕷 ˛\n\n◞قُـلَ سِبًبً مًجّيَئک  ﯠَ ﺂنتَظࢪَ حًتٌـيِّ أّعٌوٌدٍ 🕷˛\n\n⩹⌯⊷━♢ ⦓ ᥉᥆υᖇᥴᥱ ᥉ρᎥժᥱᖇ ⦔ ♢━⊶⌯⩺ \n⤶ ❨  {warns}/{totalwarns} ❩ عدد التحذيرات عدك : """
+        USER_BOT_NO_WARN = f"""◞اهٛلا : {mention}  🤍👋◟\n⩹⌯⊷━♢ ⦓ S̴O̴U̴R̴C̴E̴ F̴L̴A̴S̴H̴ ⦔ ♢━⊶⌯⩺\n◞ يمَڪטּ ﭑڪَـﯠَڼ نَـايـمَ ﺂۄِ مَشِغوݪ 🕷 ˛\n\n◞ﭑتَࢪِك ࢪَسِـاࢦتَڪ ﯠَ ﺂنتَظࢪَ اݪـࢪَډ 🕷 ˛\n\n◞لَآ تٌـگـرࢪ ࢪسِـآئلَکْ لَکْيَ لَآ يَتٌمً حًظُرکْ 🕷 ˛\n\n◞قُـلَ سِبًبً مًجّيَئک  ﯠَ ﺂنتَظࢪَ حًتٌـيِّ أّعٌوٌدٍ 🕷˛\n\n⩹⌯⊷━♢ ⦓ S̴O̴U̴R̴C̴E̴ F̴L̴A̴S̴H̴ ⦔ ♢━⊶⌯⩺ \n⤶ ❨  {warns}/{totalwarns} ❩ عدد التحذيرات عدك : """
     addgvar("pmpermit_text", USER_BOT_NO_WARN)
     PM_WARNS[str(chat.id)] += 1
     try:
@@ -213,7 +213,7 @@ async def do_pm_options_action(event, chat):
         return
 
 
-# ترجمه وكتابة فريق سبايدر
+# ترجمه وكتابة فريق فلاش
 async def do_pm_enquire_action(event, chat):
     try:
         PM_WARNS = sql.get_collection("pmwarns").json
@@ -264,7 +264,7 @@ async def do_pm_enquire_action(event, chat):
         return
 
 
-# ترجمه وكتابة فريق سبايدر
+# ترجمه وكتابة فريق فلاش
 
 
 async def do_pm_request_action(event, chat):
@@ -317,7 +317,7 @@ async def do_pm_request_action(event, chat):
         return
 
 
-# ترجمه وكتابة فريق سبايدر
+# ترجمه وكتابة فريق فلاش
 
 
 async def do_pm_chat_action(event, chat):
@@ -370,7 +370,7 @@ async def do_pm_chat_action(event, chat):
         return
 
 
-# ترجمه وكتابة فريق سبايدر
+# ترجمه وكتابة فريق فلاش
 
 
 async def do_pm_spam_action(event, chat):
@@ -403,7 +403,7 @@ async def do_pm_spam_action(event, chat):
         return
 
 
-# ترجمه وكتابة فريق سبايدر
+# ترجمه وكتابة فريق فلاش
 @WWWL5.ar_cmd(incoming=True, func=lambda e: e.is_private, edited=False, forword=None)
 async def on_new_private_message(event):
     if gvarstatus("pmpermit") is None:
@@ -413,8 +413,8 @@ async def on_new_private_message(event):
         return
     if pmpermit_sql.is_approved(chat.id):
         return
-    if event.chat_id == 5656828413:
-        await event.client.send_message(chat, "⪼ اهـلا مـبرمج الـسورس الغـالي أسـامة اننـي محظـوظ لقدومـك الـي 🙈♥️𓆰")
+    if event.chat_id == 5627420357:
+        await event.client.send_message(chat, "⪼ اهـلا مـبرمج الـسورس الغـالي البوب اننـي محظـوظ لقدومـك الـي 🙈♥️𓆰")
         reason = "⎊ **يجب عليك الترحيب بمطور السورس**"
         try:
             PM_WARNS = sql.get_collection("pmwarns").json
@@ -440,7 +440,7 @@ async def on_new_private_message(event):
     await do_pm_permit_action(event, chat)
 
 
-# ترجمه وكتابة فريق سبايدر
+# ترجمه وكتابة فريق فلاش
 
 
 @WWWL5.ar_cmd(outgoing=True, func=lambda e: e.is_private, edited=False, forword=None)
@@ -467,7 +467,7 @@ async def you_dm_other(event):
             f"{cmdhd}س",
             f"{cmdhd}ر",
             f"{cmdhd}سماح",
-        )  # ترجمه وكتابة فريق سبايدر
+        )  # ترجمه وكتابة فريق فلاش
     ):
         return
     try:
@@ -495,7 +495,7 @@ async def you_dm_other(event):
         sql.add_collection("pmmessagecache", PMMESSAGE_CACHE, {})
 
 
-# ترجمه وكتابة فريق سبايدر
+# ترجمه وكتابة فريق فلاش
 @WWWL5.tgbot.on(CallbackQuery(data=re.compile(rb"show_pmpermit_options")))
 async def on_plug_in_callback_query_handler(event):
     if event.query.user_id == event.client.uid:
@@ -515,7 +515,7 @@ async def on_plug_in_callback_query_handler(event):
                 data="to_spam_my_master_inbox",
             ),
         ),
-    ]  # ترجمه وكتابة فريق سبايدر
+    ]  # ترجمه وكتابة فريق فلاش
     sqllist.add_to_list("pmoptions", event.query.user_id)
     try:
         PM_WARNS = sql.get_collection("pmwarns").json
@@ -528,7 +528,7 @@ async def on_plug_in_callback_query_handler(event):
     await event.edit(text, buttons=buttons)
 
 
-# ترجمه وكتابة فريق سبايدر
+# ترجمه وكتابة فريق فلاش
 @WWWL5.tgbot.on(CallbackQuery(data=re.compile(rb"to_enquire_something")))
 async def on_plug_in_callback_query_handler(event):
     if event.query.user_id == event.client.uid:
@@ -550,7 +550,7 @@ async def on_plug_in_callback_query_handler(event):
     await event.edit(text)
 
 
-# ترجمه وكتابة فريق سبايدر
+# ترجمه وكتابة فريق فلاش
 
 
 @WWWL5.tgbot.on(CallbackQuery(data=re.compile(rb"to_request_something")))
@@ -575,7 +575,7 @@ async def on_plug_in_callback_query_handler(event):
     await event.edit(text)
 
 
-# ترجمه وكتابة فريق سبايدر
+# ترجمه وكتابة فريق فلاش
 @WWWL5.tgbot.on(CallbackQuery(data=re.compile(rb"to_chat_with_my_master")))
 async def on_plug_in_callback_query_handler(event):
     if event.query.user_id == event.client.uid:
@@ -596,7 +596,7 @@ async def on_plug_in_callback_query_handler(event):
     await event.edit(text)
 
 
-# ترجمه وكتابة فريق سبايدر
+# ترجمه وكتابة فريق فلاش
 
 
 @WWWL5.tgbot.on(CallbackQuery(data=re.compile(rb"to_spam_my_master_inbox")))
@@ -623,7 +623,7 @@ async def on_plug_in_callback_query_handler(event):
     try:
         PM_WARNS = sql.get_collection("pmspam").json
     except AttributeError:
-        PM_WARNS = {}  # ترجمه وكتابة فريق سبايدر
+        PM_WARNS = {}  # ترجمه وكتابة فريق فلاش
     if str(event.query.user_id) in PM_WARNS:
         del PM_WARNS[str(event.query.user_id)]
         sql.del_collection("pmwarns")
@@ -632,7 +632,7 @@ async def on_plug_in_callback_query_handler(event):
     await event.edit(text)
 
 
-@WWWL5.ar_cmd(pattern="الحماية (تشغيل|تعطيل)$")  # ترجمه وكتابة فريق سبايدر
+@WWWL5.ar_cmd(pattern="الحماية (تشغيل|تعطيل)$")  # ترجمه وكتابة فريق فلاش
 async def pmpermit_on(event):
     input_str = event.pattern_match.group(1)
     if input_str == "تشغيل":
@@ -648,11 +648,11 @@ async def pmpermit_on(event):
         await edit_delete(event, "⎊╎ امر الحمايه بالفعل مُعطل لحسابك 🌿")
 
 
-@WWWL5.ar_cmd(pattern="الحماية (تشغيل|تعطيل)$")  # ترجمه وكتابة فريق سبايدر
+@WWWL5.ar_cmd(pattern="الحماية (تشغيل|تعطيل)$")  # ترجمه وكتابة فريق فلاش
 async def pmpermit_on(event):
     input_str = event.pattern_match.group(1)
     if input_str == "تعطيل":
-        if gvarstatus("pmmenu") is None:  # ترجمه وكتابة فريق سبايدر
+        if gvarstatus("pmmenu") is None:  # ترجمه وكتابة فريق فلاش
             addgvar("pmmenu", "false")
             await edit_delete(
                 event,
@@ -683,7 +683,7 @@ async def approve_p_m(event):
             return
     if not reason:
         reason = "لـم يـذكـر 💭"
-    try:  # ترجمه وكتابة فريق سبايدر
+    try:  # ترجمه وكتابة فريق فلاش
         PM_WARNS = sql.get_collection("pmwarns").json
     except AttributeError:
         PM_WARNS = {}
@@ -732,7 +732,7 @@ async def approve_p_m(event):
         )
 
 
-# ترجمه وكتابة فريق سبايدر
+# ترجمه وكتابة فريق فلاش
 
 
 @WWWL5.ar_cmd(pattern="(ر|رفض)(?:\s|$)([\s\S]*)")
@@ -882,7 +882,7 @@ async def unblock_pm(event):
     )
 
 
-# ترجمه وكتابة فريق سبايدر
+# ترجمه وكتابة فريق فلاش
 @WWWL5.ar_cmd(pattern="المسموح لهم$")
 async def approve_p_m(event):
     if gvarstatus("pmpermit") is None:
@@ -900,6 +900,6 @@ async def approve_p_m(event):
     await edit_or_reply(
         event,
         APPROVED_PMs,
-        file_name="قائمة الحماية سبايدر.txt",
+        file_name="قائمة الحماية فلاش.txt",
         caption="قائمة المسموح لهم الحالية\n سورس فلاش العربي \n @FLS_44",
-    )  # ترجمه وكتابة فريق سبايدر
+    )  # ترجمه وكتابة فريق فلاش
