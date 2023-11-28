@@ -12,7 +12,7 @@ from WWWL5 import WWWL5
 from . import hmention, reply_id
 
 PING_PIC = os.environ.get("PING_PIC") or (
-    "https://telegra.ph/file/22bec9ffa06519aba18c8.jpg"
+    "https://telegra.ph/file/06d02c6abd3aec8ac9569.jpg"
 )
 
 JM_TXT = os.environ.get("PING_TEXT") or "مـن لا يتعلم من الماضي لا يرحمه المستقبل  . 🖤"
