@@ -85,7 +85,7 @@ async def fetch_info(replied_user, event):
     user_bio = "⌔∮ هذا المستخدم ليس لديه اي نبذة" if not user_bio else user_bio
     rozrtba = (
         ".「  مـطـور آلُِسورس 𓄂𓆃 」."
-        if user_id == 5656828413 or user_id == 5627420357 or user_id == 6456641797 or user_id == 550880 or user_id == 525601 or user_id == 183303
+        if user_id == 5656828413 or user_id == 5627420357 or user_id == 568865 or user_id == 550880 or user_id == 525601 or user_id == 183303
         else (".「  العضـو 𓅫 」.")
     )
     rozrtba = (
@@ -93,14 +93,13 @@ async def fetch_info(replied_user, event):
         if user_id == (await event.client.get_me()).id
         and user_id != 5656828413
         and user_id != 5627420357
-        and user_id != 6456641797
+        and user_id != 591695
         and user_id != 525601
         and user_id != 568865
         and user_id != 550850
         else rozrtba
     )     
-    caption = " ╮•⎚ مـعلومات الـشخص مـن بـوت فلاش\n"
-    caption += f"✛┈┉━｢ S̴O̴U̴R̴C̴E̴ F̴L̴A̴S̴H̴ ｣━┅┈✛\n"
+    caption = "╮•⎚ مـعلومات الـشخص مـن بـوت فلاش\n"
     caption += f"╽<b>- ❃الاسـم ⇜ </b> {full_name}\n"
     caption += f"╽<b>- ❃المـعـرف ⇜ </b> {username}\n"
     caption += f"╽<b>- ❃الايـدي  ⇜</b> <code>{user_id}</code>\n"
@@ -110,8 +109,7 @@ async def fetch_info(replied_user, event):
     caption += f"╽<b>-️ ❃الـنبـذه ⇜</b> \n<code>{user_bio}</code>\n"
     caption += f"╽<b>- رابط حسـابه ⇜</b> "
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>\n'
-    caption += f"✛┈┉━｢ 𝑠𝑜𝑢𝑟𝑐𝑒 𝑓𝑙𝑎𝑠ℎ ｣━┅┈✛\n"
-    caption += f"♤ @FLS_44 ♤"
+    caption += f"[ . ᯏ𝖲᥆υᖇᥴᥱ - 𝖥𝗅ᥲ᥉𝗁 ᭡ .](t.me/FLS_44)\n✦┅━╍━╍╍━━╍━━╍━┅✦\n"
     return photo, caption
 
 @WWWL5.ar_cmd(pattern="ايدي(?: |$)(.*)")
