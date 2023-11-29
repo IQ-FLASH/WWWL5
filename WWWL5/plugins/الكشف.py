@@ -109,7 +109,7 @@ async def fetch_info(replied_user, event):
     caption += f"╽<b>-️ ❃الـنبـذه ⇜</b> \n<code>{user_bio}</code>\n"
     caption += f"╽<b>- رابط حسـابه ⇜</b> "
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>\n'
-    caption += f"[ . ᯏ𝖲᥆υᖇᥴᥱ - 𝖥𝗅ᥲ᥉𝗁 ᭡ .](t.me/FLS_44)\n✦┅━╍━╍╍━━╍━━╍━┅✦"
+    caption += f"**[ . ᯏ𝖲᥆υᖇᥴᥱ - 𝖥𝗅ᥲ᥉𝗁 ᭡ .](t.me/FLS_44)\n✦┅━╍━╍╍━━╍━━╍━┅✦**"
     return photo, caption
 
 @WWWL5.ar_cmd(pattern="ايدي(?: |$)(.*)")
