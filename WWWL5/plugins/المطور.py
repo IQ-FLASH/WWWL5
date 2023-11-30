@@ -7,7 +7,7 @@ from ..Config import Config
 ROZ_PIC = "https://telegra.ph/file/06d02c6abd3aec8ac9569.jpg"
 RAZAN = Config.TG_BOT_USERNAME
 ROZ_T = (
-    f"**مطور فلاش سبايدر **\n"
+    f"**ܩߺ𐢋ߺ𐬛𐬠 ܚࡅߺ𐬛𐬠ܚࡅߺ ܦ࠭ߺࡋߺוࡅࠦࡅࡅࡅߺ **\n"
   
 )
 
@@ -23,7 +23,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
             buttons = [
                 [
                     Button.url("❥︎𝕾🅔🅛🅟🅞🅟𝕾", "https://t.me/P_O28"),
-                    Button.url("S̴O̴U̴R̴C̴E̴ F̴L̴A̴S̴H̴", "https://t.me/FLS_44"),
+                    Button.url(". ᯏ𝖲᥆υᖇᥴᥱ - 𝖥𝗅ᥲ᥉𝗁 ᭡ .", "https://t.me/FLS_44"),
                     
                 ]
             ]

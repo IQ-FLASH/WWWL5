@@ -303,21 +303,40 @@ async def permalink(mention):
     )
 
 
-@WWWL5.on(admin_cmd(pattern="زواج(?:\s|$)([\s\S]*)"))
-async def rzfun(mention):
+@WWWL5.ar_cmd(pattern="زواج(?: |$)(.*)")
+async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5627420357:
-        return await edit_or_reply(mention, f"**⌔∮ عذرا هذا مطور السورس**")
-    await edit_or_reply(mention, f"**نتجوز ومتبصش على غيري 🥺💞 ܰ**")
+    if custom:
+        return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
+    tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    await edit_or_reply(
+        mention, f"❃ المستخدم [{tag}](tg://user?id={user.id}) \n❃ تـم الزواج منه 🌚💞"
+    )
 
 
-@WWWL5.on(admin_cmd(pattern="طلاق(?:\s|$)([\s\S]*)"))
-async def mention(mention):
+@WWWL5.ar_cmd(pattern="طلاق(?: |$)(.*)")
+async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5627420357:
-        return await edit_or_reply(mention, f"**⌔∮ عذرا هذا مطور السورس**")
-    await edit_or_reply(mention, f"**طالق طالق بالعشرة 😹😭💕 ܰ**")
+    if custom:
+        return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
+    tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    await edit_or_reply(
+        mention, f"❃ المستخدم [{tag}](tg://user?id={user.id}) \n❃ تـم طـلاقـك منه 😂😂"
+    )
+
+
+@WWWL5.ar_cmd(pattern="خلع(?: |$)(.*)")
+async def permalink(mention):
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if custom:
+        return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
+    tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    await edit_or_reply(
+        mention, f"❃ المستخدم [{tag}](tg://user?id={user.id}) \n❃ تـم خـلـعـك مـنـه مـن قـبـل محـكـمـة [ܦ࠭ߺࡋߺוࡅࠦࡅࡅࡅߺ](t.me/FLS_44) 😂"
+    )
