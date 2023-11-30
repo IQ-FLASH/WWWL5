@@ -632,7 +632,7 @@ async def on_plug_in_callback_query_handler(event):
     await event.edit(text)
 
 
-@WWWL5.ar_cmd(pattern="الحماية (تشغيل|تعطيل)$")  # ترجمه وكتابة فريق فلاش
+@WWWL5.ar_cmd(pattern="(تشغيل|تعطيل) الحماية$")  # ترجمه وكتابة فريق فلاش
 async def pmpermit_on(event):
     input_str = event.pattern_match.group(1)
     if input_str == "تشغيل":
@@ -648,7 +648,7 @@ async def pmpermit_on(event):
         await edit_delete(event, "⎊╎ امر الحمايه بالفعل مُعطل لحسابك 🌿")
 
 
-@WWWL5.ar_cmd(pattern="الحماية (تشغيل|تعطيل)$")  # ترجمه وكتابة فريق فلاش
+@WWWL5.ar_cmd(pattern="(تشغيل|تعطيل) الحماية$")  # ترجمه وكتابة فريق فلاش
 async def pmpermit_on(event):
     input_str = event.pattern_match.group(1)
     if input_str == "تعطيل":
