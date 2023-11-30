@@ -24,7 +24,7 @@ plugin_category = "utils"
 # اذا انت ابن حرام اخمط 😂
 # اي بعدك تريد تخمط ترا من تخمط مراح تنجح
 
-@WWWL5.on(admin_cmd(pattern="رفع مرتي(?:\s|$)([\s\S]*)"))
+@WWWL5.on(admin_cmd(pattern="رفع زوجتي(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
@@ -33,7 +33,7 @@ async def permalink(mention):
     me = await mention.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    await edit_or_reply(mention, f"🚻 ** ᯽︙  المستخدم => • ** [{WWWL5}](tg://user?id={user.id}) \n ☑️ **᯽︙  تم رفعها مرتك بواسطه  :**{my_mention} 👰🏼‍♀️.\n**᯽︙  يلا حبيبي امشي نخلف بيبي 👶🏻🤤** ")
+    await edit_or_reply(mention, f"🚻 ** ᯽︙  المستخدم => • ** [{WWWL5}](tg://user?id={user.id}) \n ☑️ **᯽︙  تم رفعها زوجـتـك بواسطه  :**{my_mention} 👰🏼‍♀️.\n**᯽︙  يلا حبيبي امشي نخلف بيبي 👶🏻🤤** ")
 
 @WWWL5.on(admin_cmd(pattern="رفع جلب(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
@@ -79,7 +79,7 @@ async def permalink(mention):
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"᯽︙ المستخدم [{WWWL5}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه قرد واعطائه موزة 🐒🍌 بواسطة :** {my_mention}")
 
-@WWWL5.on(admin_cmd(pattern="رفع بكلبي(?:\s|$)([\s\S]*)"))
+@WWWL5.on(admin_cmd(pattern="رفع قلبي(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
@@ -89,11 +89,11 @@ async def permalink(mention):
     me = await mention.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{WWWL5}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه بكلـبك 🤍 بواسطة :** {my_mention} \n**᯽︙  انت حبي الابدي 😍**")
+    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{WWWL5}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه قلبي 🤍 بواسطة :** {my_mention} \n**᯽︙  انت حبي الابدي 😍**")
     
     
 
-@WWWL5.on(admin_cmd(pattern="رفع مطي(?:\s|$)([\s\S]*)"))
+@WWWL5.on(admin_cmd(pattern="رفع عرص(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
@@ -107,7 +107,7 @@ async def permalink(mention):
     me = await mention.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{WWWL5}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه مطي 🐴 بواسطة :** {my_mention} \n**᯽︙  تعال حبي استلم  انه **")
+    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{WWWL5}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه عرص 🐴 بواسطة :** {my_mention} \n**᯽︙  تعال حبي استلم  انه **")
     
 #كـتابة المـلف وتعديل.    :   السيد حسين.   اخمط وسمي روحك مطور فرخي 😂
 # اذا انت ابن حرام اخمط 😂
@@ -128,10 +128,10 @@ async def permalink(mention):
     me = await mention.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{WWWL5}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه زوجج بواسطة :** {my_mention} \n**᯽︙  يلا حبيبي امشي نخلف 🤤🔞**")
+    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{WWWL5}](tg://user?id={user.id}) \n**᯽︙  تـم رفعـه زوجـك بواسطة :** {my_mention} \n**᯽︙  يلا حبيبي امشي نخلف 🤤🔞**")
     
 
-@WWWL5.on(admin_cmd(pattern="رفع زاحف(?:\s|$)([\s\S]*)"))
+@WWWL5.on(admin_cmd(pattern="رفع ثعبان(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
@@ -145,7 +145,7 @@ async def permalink(mention):
     me = await mention.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{WWWL5}](tg://user?id={user.id}) \n**᯽︙  تـم رفع المتهم زاحف اصلي بواسطة :** {my_mention} \n**᯽︙  ها يلزاحف شوكت تبطل سوالفك حيوان 😂🐍**")
+    await edit_or_reply(mention, f"**᯽︙ المستخدم** [{WWWL5}](tg://user?id={user.id}) \n**᯽︙  تـم رفع المتهم ثعبان تث تث 😂🐍 بواسطة :** {my_mention} \n**᯽︙  اهـلا بالزاحـف 😂🐍**")
 
 @WWWL5.on(admin_cmd(pattern="رفع كحبة(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
@@ -420,7 +420,7 @@ async def permalink(mention):
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
     await edit_or_reply(mention, f"᯽︙ ** لقد تم زواجك/ج من : **[{WWWL5}](tg://user?id={user.id}) 💍\n**᯽︙  الف الف مبروك الان يمكنك اخذ راحتك ** ")
 
-@WWWL5.on(admin_cmd(pattern="طلاك(?:\s|$)([\s\S]*)"))
+@WWWL5.on(admin_cmd(pattern="طلاق(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
