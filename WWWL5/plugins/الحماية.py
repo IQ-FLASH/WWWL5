@@ -176,7 +176,7 @@ async def do_pm_options_action(event, chat):
     except AttributeError:
         PMMESSAGE_CACHE = {}
     if str(chat.id) not in PM_WARNS:
-        text = "⎊ اختار احد الخيارات في الأعلى ولا تكرر اختيارك وهذا اخر تحذير لك"
+        text = "❃ اختار احد الخيارات في الأعلى ولا تكرر اختيارك وهذا اخر تحذير لك"
         await event.reply(text)
         PM_WARNS[str(chat.id)] = 1
         sql.del_collection("pmwarns")
@@ -195,7 +195,7 @@ async def do_pm_options_action(event, chat):
         LOGS.info(str(e))
     sql.del_collection("pmmessagecache")
     sql.add_collection("pmmessagecache", PMMESSAGE_CACHE, {})
-    USER_BOT_WARN_ZERO = f"⎊ اتذكر حذرتك وقلت لك لا تكرر اكثر من خيار ولا ترسل رسائل مجرد انتظر. \
+    USER_BOT_WARN_ZERO = f"❃ اتذكر حذرتك وقلت لك لا تكرر اكثر من خيار ولا ترسل رسائل مجرد انتظر. \
 تعتقد راح اخليك تكرر لا اسف راح احظرك من الحساب. \
 حاليا متكدر بعد تتكلم الى ان ياتي صاحب الحساب ويقوم بالغاء الحظر. 🙂💘"
     await event.reply(USER_BOT_WARN_ZERO)
@@ -415,7 +415,7 @@ async def on_new_private_message(event):
         return
     if event.chat_id == 5627420357:
         await event.client.send_message(chat, "⪼ اهـلا مـبرمج الـسورس الغـالي البوب اننـي محظـوظ لقدومـك الـي 🙈♥️𓆰")
-        reason = "⎊ **يجب عليك الترحيب بمطور السورس**"
+        reason = "❃ **يجب عليك الترحيب بمطور السورس**"
         try:
             PM_WARNS = sql.get_collection("pmwarns").json
         except AttributeError:
@@ -499,7 +499,7 @@ async def you_dm_other(event):
 @WWWL5.tgbot.on(CallbackQuery(data=re.compile(rb"show_pmpermit_options")))
 async def on_plug_in_callback_query_handler(event):
     if event.query.user_id == event.client.uid:
-        text = "⎊ عذرا هذه الخيارات ليست لك انها للمستخدمين الذين يراسلوك 😐⚕️"
+        text = "❃ عذرا هذه الخيارات ليست لك انها للمستخدمين الذين يراسلوك 😐⚕️"
         return await event.answer(text, cache_time=0, alert=True)
     text = f"""حسنا الان بإمكانك اختيار احد الخيارات في الاسفل للتواصل مع , {mention}.
 - اختر بهدوء خيار واحد فقط لنعرف سبب قدومك هنا 🤍
@@ -617,7 +617,7 @@ async def on_plug_in_callback_query_handler(event):
          \n░░░░░░░░░░░█░░█\
          \n░░░░░░░░░░░█░░█\
          \n░░░░░░░░░░░░▀▀`\
-         \n⎊ جييد لكن هذا ليس بيتك حتى تقوم بالازعاج اذهب للعب بعيدا \
+         \n❃ جييد لكن هذا ليس بيتك حتى تقوم بالازعاج اذهب للعب بعيدا \
          \n\nو هذا اخر تحذير لك ااذا ترسل رسالة اخرى ساقوم بحظرك تلقائيا "
     sqllist.add_to_list("pmspam", event.query.user_id)
     try:
@@ -638,14 +638,14 @@ async def pmpermit_on(event):
     if input_str == "تشغيل":
         if gvarstatus("pmpermit") is None:
             addgvar("pmpermit", "true")
-            await edit_delete(event, "⎊╎ تم تفعيل امر الحماية لحسابك بنجاح ✅")
+            await edit_delete(event, "❃╎ تم تفعيل امر الحماية لحسابك بنجاح ✅")
         else:
-            await edit_delete(event, "⎊╎ امر الحمايه بالفعل مُمكن لحسابك 🌿")
+            await edit_delete(event, "❃╎ امر الحمايه بالفعل مُمكن لحسابك 🌿")
     elif gvarstatus("pmpermit") is not None:
         delgvar("pmpermit")
-        await edit_delete(event, "⎊╎ تم تعطيل امر الحماية لحسابك بنجاح ✅")
+        await edit_delete(event, "❃╎ تم تعطيل امر الحماية لحسابك بنجاح ✅")
     else:
-        await edit_delete(event, "⎊╎ امر الحمايه بالفعل مُعطل لحسابك 🌿")
+        await edit_delete(event, "❃╎ امر الحمايه بالفعل مُعطل لحسابك 🌿")
 
 
 @WWWL5.ar_cmd(pattern="(تشغيل|تعطيل) الحماية$")  # ترجمه وكتابة فريق فلاش
@@ -656,23 +656,23 @@ async def pmpermit_on(event):
             addgvar("pmmenu", "false")
             await edit_delete(
                 event,
-                "⎊╎ تم تعطيل امر الحماية لحسابك بنجاح ✅",
+                "❃╎ تم تعطيل امر الحماية لحسابك بنجاح ✅",
             )
         else:
-            await edit_delete(event, "⎊╎ امر الحمايه بالفعل مُعطل لحسابك 🌿")
+            await edit_delete(event, "❃╎ امر الحمايه بالفعل مُعطل لحسابك 🌿")
     elif gvarstatus("pmmenu") is not None:
         delgvar("pmmenu")
-        await edit_delete(event, "⎊╎ تم تفعيل امر الحماية لحسابك بنجاح ✅")
+        await edit_delete(event, "❃╎ تم تفعيل امر الحماية لحسابك بنجاح ✅")
     else:
-        await edit_delete(event, "⎊╎ امر الحمايه بالفعل مُمكن لحسابك 🌿")
+        await edit_delete(event, "❃╎ امر الحمايه بالفعل مُمكن لحسابك 🌿")
 
 
-@WWWL5.ar_cmd(pattern="(س|سماح)(?:\s|$)([\s\S]*)")
+@WWWL5.ar_cmd(pattern="(ق|قبول)(?:\s|$)([\s\S]*)")
 async def approve_p_m(event):
     if gvarstatus("pmpermit") is None:
         return await edit_delete(
             event,
-            f"⎊ يجب تفعيل امر الحماية اولا بأرسال `{cmdhd}الحماية تشغيل` ليشتغل هذا الأمر",
+            f"❃ يجب تفعيل امر الحماية اولا بأرسال `{cmdhd}الحماية تشغيل` ليشتغل هذا الأمر",
         )
     if event.is_private:
         user = await event.get_chat()
@@ -707,7 +707,7 @@ async def approve_p_m(event):
             sqllist.rm_from_list("pmoptions", chat.id)
         await edit_delete(
             event,
-            f"-  [{user.first_name}](tg://user?id={user.id})\n⎊╎تـم الـسمـاح لـه مـن أرسـال الـرسـائـل ⚠️ \n⎊╎ الـسـبـب ❔ : {reason}",
+            f"-  [{user.first_name}](tg://user?id={user.id})\n❃╎تـم الـسمـاح لـه مـن أرسـال الـرسـائـل ⚠️ \n❃╎ الـسـبـب ❔ : {reason}",
         )
         try:
             PMMESSAGE_CACHE = sql.get_collection("pmmessagecache").json
@@ -740,7 +740,7 @@ async def disapprove_p_m(event):
     if gvarstatus("pmpermit") is None:
         return await edit_delete(
             event,
-            f"⎊ يجب تفعيل امر الحماية اولا بأرسال `{cmdhd}الحماية تشغيل` ليشتغل هذا الأمر",
+            f"❃ يجب تفعيل امر الحماية اولا بأرسال `{cmdhd}الحماية تشغيل` ليشتغل هذا الأمر",
         )
     if event.is_private:
         user = await event.get_chat()
@@ -754,19 +754,19 @@ async def disapprove_p_m(event):
                 return
     if reason == "الكل":
         pmpermit_sql.disapprove_all()
-        return await edit_delete(event, "⎊╎ حسنا تم رفض الجميع بنجاح ")
+        return await edit_delete(event, "❃╎ حسنا تم رفض الجميع بنجاح ")
     if not reason:
-        reason = "⎊╎ لـم يـذكـر 💭"
+        reason = "❃╎ لـم يـذكـر 💭"
     if pmpermit_sql.is_approved(user.id):
         pmpermit_sql.disapprove(user.id)
         await edit_or_reply(
             event,
-            f"[{user.first_name}](tg://user?id={user.id})\n⎊╎تـم رفـضـه مـن أرسـال الـرسـائـل ⚠️\n⎊╎ الـسـبـب ❔ : {reason}",
+            f"[{user.first_name}](tg://user?id={user.id})\n❃╎تـم رفـضـه مـن أرسـال الـرسـائـل ⚠️\n❃╎ الـسـبـب ❔ : {reason}",
         )
     else:
         await edit_delete(
             event,
-            f"[{user.first_name}](tg://user?id={user.id})\n ⎊ لم يتم الموافقة عليه بالأصلl",
+            f"[{user.first_name}](tg://user?id={user.id})\n ❃ لم يتم الموافقة عليه بالأصلl",
         )
 
 
@@ -775,7 +775,7 @@ async def block_p_m(event):
     if gvarstatus("pmpermit") is None:
         return await edit_delete(
             event,
-            f"⎊ يجب تفعيل امر الحماية اولا بأرسال `{cmdhd}الحماية on` ليشتغل هذا الأمر",
+            f"❃ يجب تفعيل امر الحماية اولا بأرسال `{cmdhd}الحماية on` ليشتغل هذا الأمر",
         )  # ترجمه وكتابة فريق جمثون
     if event.is_private:
         user = await event.get_chat()
@@ -860,12 +860,12 @@ async def block_p_m(event):
     )
 
 
-@WWWL5.ar_cmd(pattern="انبلوك(?:\s|$)([\s\S]*)")
+@WWWL5.ar_cmd(pattern="الغاء الحظر(?:\s|$)([\s\S]*)")
 async def unblock_pm(event):
     if gvarstatus("pmpermit") is None:
         return await edit_delete(
             event,
-            f"⎊ يجب تفعيل امر الحماية اولا بأرسال `{cmdhd}الحماية تشغيل` ليشتغل هذا الأمر",
+            f"❃ يجب تفعيل امر الحماية اولا بأرسال `{cmdhd}الحماية تشغيل` ليشتغل هذا الأمر",
         )
     if event.is_private:
         user = await event.get_chat()
@@ -888,13 +888,13 @@ async def approve_p_m(event):
     if gvarstatus("pmpermit") is None:
         return await edit_delete(
             event,
-            f"⎊ يجب تفعيل امر الحماية اولا بأرسال `{cmdhd}الحماية on` ليشتغل هذا الأمر",
+            f"❃ يجب تفعيل امر الحماية اولا بأرسال `{cmdhd}الحماية on` ليشتغل هذا الأمر",
         )
     approved_users = pmpermit_sql.get_all_approved()
-    APPROVED_PMs = "⎊ قائمة المسموح لهم الحالية\n\n"
+    APPROVED_PMs = "❃ قائمة المسموح لهم الحالية\n\n"
     if len(approved_users) > 0:
         for user in approved_users:
-            APPROVED_PMs += f"⎊ 👤 {_format.mentionuser(user.first_name , user.user_id)}\n⎊ الأيدي: `{user.user_id}`\n⎊ المعرف: @{user.username}\n⎊ التاريخ: {user.date}\n⎊ السبب: {user.reason}\n\n"
+            APPROVED_PMs += f"❃ 👤 {_format.mentionuser(user.first_name , user.user_id)}\n❃ الأيدي: `{user.user_id}`\n❃ المعرف: @{user.username}\n❃ التاريخ: {user.date}\n❃ السبب: {user.reason}\n\n"
     else:
         APPROVED_PMs = "انت لم توافق على اي شخص بالاصل ️"
     await edit_or_reply(
