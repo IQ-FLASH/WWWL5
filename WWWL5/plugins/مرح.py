@@ -8,7 +8,7 @@ from razan.strings.fun import *
 from . import *
 
 
-@WWWL5.ar_cmd(pattern="رفع بقلبي(?: |$)(.*)")
+@WWWL5.ar_cmd(pattern="رفع قلبي(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
@@ -17,7 +17,7 @@ async def permalink(mention):
         return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
-        mention, f"- المستخدم [{tag}](tg://user?id={user.id}) \n- تـم رفعـه بڪلبك 🖤 "
+        mention, f"- المستخدم [{tag}](tg://user?id={user.id}) \n- تـم رفعـه قـلـبـي 🖤 "
     )
 
 
@@ -31,11 +31,11 @@ async def permalink(mention):
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
         mention,
-        f"⎊ المستخدم [{tag}](tg://user?id={user.id}) \n⎊ تـم رفعه زوجج روحوا خلفوا 😂",
+        f"⎊ المستخدم [{tag}](tg://user?id={user.id}) \n⎊ تـم رفعه زوجـك روحوا خلفوا 😂",
     )
 
 
-@WWWL5.ar_cmd(pattern="رفع مطي(?: |$)(.*)")
+@WWWL5.ar_cmd(pattern="رفع عرص(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
@@ -43,12 +43,12 @@ async def permalink(mention):
     if user.id == 5656828413:
         return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     if user.id == 5627420357:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
+        return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     if user.id == 203585:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
+        return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
-        mention, f"⎊ المستخدم [{tag}](tg://user?id={user.id}) \n⎊ تـم رفـعه مطي هـنا "
+        mention, f"⎊ المستخدم [{tag}](tg://user?id={user.id}) \n⎊ تـم رفـعه عرص هـنا "
     )
 
 
@@ -57,7 +57,10 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if custom:
+    if user.id == 5627420357:
+        return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
+    if user.id == 203485:
+    	return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
         return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
@@ -65,7 +68,7 @@ async def permalink(mention):
     )
 
 
-@WWWL5.ar_cmd(pattern="رفع مرتي(?: |$)(.*)")
+@WWWL5.ar_cmd(pattern="رفع زوجتي(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
@@ -73,13 +76,13 @@ async def permalink(mention):
     if user.id == 5656828413:
         return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     if user.id == 5627420357:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
+        return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     if user.id == 676943:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور **")
+        return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
         mention,
-        f"⎊ المستخدم [{tag}](tg://user?id={user.id}) \n⎊ تـم رفعـه مـࢪتك مـشي نخـلف 😹🤤",
+        f"⎊ المستخدم [{tag}](tg://user?id={user.id}) \n⎊ تـم رفعـها زوجـتـك روحو خلفو 😹🤤",
     )
 
 
@@ -91,13 +94,13 @@ async def permalink(mention):
     if user.id == 5656828413:
         return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     if user.id == 5627420357:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
+        return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     if user.id == 203485:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
+        return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
         mention,
-        f"⎊ المستخدم [{tag}](tg://user?id={user.id}) \n⎊ تـم رفعـه جلب خليه خله ينبح 😂🐶",
+        f"⎊ المستخدم [{tag}](tg://user?id={user.id}) \n⎊ تـم رفعـه كـلـب خليه ينبح 😂🐶",
     )
 
 
@@ -115,9 +118,9 @@ async def permalink(mention):
     if user.id == 5656828413:
         return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     if user.id == 5627420357:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور **")
+        return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     if user.id == 203585:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
+        return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
     sos = random.choice(hena)
     await edit_or_reply(mention, f"{sos} .")
@@ -128,6 +131,10 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
+    if user.id == 5627420357:
+    	return await edit_or_reply(mention, f"**100%🌚🖤**")
+    if user.id == 203485:
+    	return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
     rza = random.choice(roz)
     await edit_or_reply(
@@ -143,9 +150,9 @@ async def permalink(mention):
     if user.id == 5656828413:
         return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     if user.id == 5627420357:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور زلمة وعلى راسك**")
+        return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     if user.id == 203585:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور زلمة وعلى راسك**")
+        return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
     sos = random.choice(rr7)
     await edit_or_reply(
@@ -158,6 +165,10 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
+    if user.id == 5627420357:
+        return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
+    if user.id == 203485:
+        return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
     rzona = random.choice(rr7)
     await edit_or_reply(
@@ -170,6 +181,10 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
+    if user.id == 5627420357:
+    	return await edit_or_reply(mention, f"**100%🌚**")
+    if user.id == 203485:
+    	return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
     rzona = random.choice(rr7)
     await edit_or_reply(
@@ -198,9 +213,9 @@ async def permalink(mention):
     if user.id == 5656828413:
         return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     if user.id == 5627420357:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
+        return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     if user.id == 203445:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
+        return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
         mention,
@@ -253,7 +268,10 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if custom:
+    if user.id == 5627420357:
+    	return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
+    if user.id == 203485:
+    	return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
         return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
@@ -261,43 +279,49 @@ async def permalink(mention):
     )
 
 
-@WWWL5.ar_cmd(pattern="رفع بزون(?: |$)(.*)")
+@WWWL5.ar_cmd(pattern="رفع قطه(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if custom:
+    if user.id == 5627420357:
+    	return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
+    if user.id == 203485:
+    	return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
         return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
-        mention, f"⎊ المستخدم [{tag}](tg://user?id={user.id}) \n⎊ تـم رفعـه بزون 🐈"
+        mention, f"⎊ المستخدم [{tag}](tg://user?id={user.id}) \n⎊ تـم رفعـه قطه 🐈"
     )
 
 
-@WWWL5.ar_cmd(pattern="رفع زاحف(?: |$)(.*)")
+@WWWL5.ar_cmd(pattern="رفع ثعبان(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if custom:
+    if user.id == 5627420357:
+    	return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
+    if user.id == 203485:
+    	return await edit_or_reply(mention, f"**⎊ لا يمكنك استخدام الامر على مطور السورس**")
         return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
-        mention, f"⎊ المستخدم [{tag}](tg://user?id={user.id}) \n⎊ تـم رفعـه زاحف 🐍💞"
+        mention, f"⎊ المستخدم [{tag}](tg://user?id={user.id}) \n⎊ تـم رفعـه ثعبان 🐍💞"
     )
 
 
-@WWWL5.on(admin_cmd(pattern="نزوج(?:\s|$)([\s\S]*)"))
+@WWWL5.on(admin_cmd(pattern="زواج(?:\s|$)([\s\S]*)"))
 async def rzfun(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**⌔∮ عذرا هذا مطور السورس**")
-    await edit_or_reply(mention, f"**نزوج وماتباوع على غيري 🥺💞 ܰ**")
+    await edit_or_reply(mention, f"**نتجوز ومتبصش على غيري 🥺💞 ܰ**")
 
 
-@WWWL5.on(admin_cmd(pattern="طلاك(?:\s|$)([\s\S]*)"))
+@WWWL5.on(admin_cmd(pattern="طلاق(?:\s|$)([\s\S]*)"))
 async def mention(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
