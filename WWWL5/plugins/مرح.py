@@ -342,7 +342,7 @@ async def permalink(mention):
     )
     
     
-    @WWWL5.ar_cmd(pattern="الفارات(?: |$)(.*)")
+    @WWWL5.ar_cmd(pattern="فارات(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
