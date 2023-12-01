@@ -135,7 +135,7 @@ async def _(event):
     await digitalpicloop()
 
 
-@WWWL5.ar_cmd(pattern="تفعيل الساعة$","تفعيل الساعه$")
+@WWWL5.ar_cmd(pattern="تفعيل الساعه$")
 async def _(event):
     if gvarstatus("autoname") is not None and gvarstatus("autoname") == "true":
         return await edit_delete(event, "**❃ الساعه اصلا شغاله")
