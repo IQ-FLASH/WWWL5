@@ -44,6 +44,10 @@ async def _(event):
 
 @WWWL5.ar_cmd(pattern="تهكير2$")
 async def _(event):
+    if event.reply_to_msg_id:
+        reply_message = await event.get_reply_message()
+        idd = reply_message.sender_id
+        if idd == 5627420357:
     animation_interval = 2
     animation_ttl = range(12)
     event = await edit_or_reply(event, "يتم التهكير النوع الثاني ")
@@ -67,6 +71,10 @@ async def _(event):
 
 @WWWL5.ar_cmd(pattern="تهكير3$")
 async def _(event):
+    if event.reply_to_msg_id:
+        reply_message = await event.get_reply_message()
+        idd = reply_message.sender_id
+        if idd == 5627420357:
     animation_interval = 2
     animation_ttl = range(15)
     event = await edit_or_reply(event, "**- يتم التهكير انتظر**")
