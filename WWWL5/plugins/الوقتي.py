@@ -129,31 +129,31 @@ async def _(event):
     while not downloader.isFinished():
         pass
     if gvarstatus("digitalpic") is not None and gvarstatus("digitalpic") == "true":
-        return await edit_delete(event, "**⎊ الصورة الوقتية بالاصل شغالة**")
+        return await edit_delete(event, "**❃ الصورة الوقتية بالاصل شغالة**")
     addgvar("digitalpic", True)
-    await edit_delete(event, "**⎊ تم بنجاح تفعيل امر الصورة الوقتية بنجاح**")
+    await edit_delete(event, "**❃ تم بنجاح تفعيل امر الصورة الوقتية بنجاح**")
     await digitalpicloop()
 
 
-@WWWL5.ar_cmd(pattern="اسم وقتي$")
+@WWWL5.ar_cmd(pattern="تفعيل الساعة$","تفعيل الساعه$")
 async def _(event):
     if gvarstatus("autoname") is not None and gvarstatus("autoname") == "true":
-        return await edit_delete(event, "**⎊ الاسم الوقتي بالاصل شغال")
+        return await edit_delete(event, "**❃ الساعه اصلا شغاله")
     addgvar("autoname", True)
-    await edit_delete(event, "**⎊ تم تفعيل الاسم الوقتي بنجاح**")
+    await edit_delete(event, "****❃ تم تفعيل الساعه بنجاح**")
     await autoname_loop()
 
 
 @WWWL5.ar_cmd(pattern="بايو وقتي$")
 async def _(event):
     if gvarstatus("autobio") is not None and gvarstatus("autobio") == "true":
-        return await edit_delete(event, "**⎊ البايو الوقتي بالاصل شغال**")
+        return await edit_delete(event, "**❃ البايو الوقتي بالاصل شغال**")
     addgvar("autobio", True)
-    await edit_delete(event, "**⎊ تم بنجاح تشغيل البايو الوقتي**")
+    await edit_delete(event, "**❃ تم بنجاح تشغيل البايو الوقتي**")
     await autobio_loop()
 
 
-@WWWL5.ar_cmd(pattern="انهاء ([\s\S]*)")
+@WWWL5.ar_cmd(pattern="تعطيل ([\s\S]*)")
 async def _(event):
     input_str = event.pattern_match.group(1)
     if (
@@ -171,29 +171,30 @@ async def _(event):
                     await event.client.get_profile_photos("me", limit=1)
                 )
             )
-            return await edit_delete(event, "**⎊ تم بنجاح ايقاف الصورة الوقتية**")
-        return await edit_delete(event, "**⎊ الصورة الوقتية غير مفعلة بالاصل**")
+            return await edit_delete(event, "**❃ تم بنجاح ايقاف الصورة الوقتية**")
+        return await edit_delete(event, "**❃ الصورة الوقتية غير مفعلة بالاصل**")
     if (
-        input_str == "اسم وقتي"
-        or input_str == "اسم الوقتي"
-        or input_str == "الاسم الوقتي"
-        or input_str == "الاسم وقتي"
+        input_str == "تفعيل الساعه"
+        or input_str == "تفعيل الساعة"
+        or input_str == "الساعه"
+        or input_str == "الساعة"
+        or input_str == "التفعيل الساعه"
     ):
         if gvarstatus("autoname") is not None and gvarstatus("autoname") == "true":
             delgvar("autoname")
             await event.client(
                 functions.account.UpdateProfileRequest(first_name=DEFAULTUSER)
             )
-            return await edit_delete(event, "**⎊ تم بنجاح ايقاف الاسم الوقتي**")
-        return await edit_delete(event, "**⎊ الاسم الوقتي غير شغال اصلا**")
+            return await edit_delete(event, "**❃ تـم إيقاف الساعه بنجاح**")
+        return await edit_delete(event, "**❃ قـم بتشغيل الساعه اولا ياصديقي**")
     if input_str == "بايو وقتي" or input_str == "البايو الوقتي":
         if gvarstatus("autobio") is not None and gvarstatus("autobio") == "true":
             delgvar("autobio")
             await event.client(
                 functions.account.UpdateProfileRequest(about=DEFAULTUSERBIO)
             )
-            return await edit_delete(event, "**⎊ تم بنجاح ايقاف البايو الوقتي**")
-        return await edit_delete(event, "**⎊ البايو الوقتي غير شغال اصلا**")
+            return await edit_delete(event, "**❃ تم بنجاح ايقاف البايو الوقتي**")
+        return await edit_delete(event, "**❃ البايو الوقتي غير شغال اصلا**")
     END_CMDS = [
         "الصورة الوقتية",
         "الصورة الوقتيه",
@@ -201,13 +202,15 @@ async def _(event):
         "الصوره الوقتية",
         "صورة وقتية",
         "صوره وقتيه",
-        "اسم وقتي",
-        "اسم وقتي",
+        "تفعيل الساعه",
+        "تفعيل الساعة",
         "اسم الوقتي",
-        "الاسم وقتي",
+        "التفعيل الساعه",
         "الاسم الوقتي",
         "بايو وقتي",
         "البايو الوقتي",
+        "الساعه",
+        "الساعة",
     ]
     if input_str not in END_CMDS:
         await edit_delete(
