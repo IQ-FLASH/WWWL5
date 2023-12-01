@@ -342,14 +342,6 @@ async def permalink(mention):
     )
     
     
-@WWWL5.ar_cmd(pattern="الفارات(?: |$)(.*)")
-async def permalink(mention):
-    user, custom = await get_user_from_event(mention)
-    if not user:
-        return
-    if custom:
-        return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
-    tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
-    await edit_or_reply(
-        mention, f"❃ عزيزي \n❃ انضم الي القناة وستجد جميع الفارات \n❃ [اضغط هنا للانضمام](t.me/FLS_46)   ➪➪➪"
-    )
+@WWWL5.ar_cmd(pattern="الفارات$")
+async def _(event):
+    zzevent = await edit_or_reply(event, "❃ عزيزي \n❃ انضم الي القناة وستجد جميع الفارات \n❃ [اضغط هنا للانضمام](t.me/FLS_46)   ➪➪➪")
