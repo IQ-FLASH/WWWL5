@@ -6,14 +6,14 @@ from ..core.managers import edit_delete, edit_or_reply
 from ..utils.tools import create_supergroup
 
 
-@WWWL5.ar_cmd(pattern="صنع (مجموعة خارقة|مجموعة عادية|قناة) ([\s\S]*)")
+@WWWL5.ar_cmd(pattern="انشاء (مجموعة خارقة|مجموعة عادية|قناة) ([\s\S]*)")
 async def _(event):
     type_of_group = event.pattern_match.group(1)
     group_name = event.pattern_match.group(2)
     if type_of_group == "قناة":
-        descript = "تم صنع هذه القناة بواسطة سورس فلاش"
+        descript = "تم انشاء هذه القناة بواسطة سورس فلاش"
     else:
-        descript = "تم صنع المجموعة باستخدام سورس فلاش"
+        descript = "تم انشاء المجموعة باستخدام سورس فلاش"
     if type_of_group == "مجموعة عادية":
         try:
             result = await event.client(
@@ -29,7 +29,7 @@ async def _(event):
                 )
             )
             await edit_or_reply(
-                event, f"**- المجموعة `{group_name}` تم بنجاح صنعها {result.link}**"
+                event, f"**- المجموعة `{group_name}` تم بنجاح انشاءها {result.link}**"
             )
         except Exception as e:
             await edit_delete(event, f"**Error:**\n{str(e)}")
@@ -49,7 +49,7 @@ async def _(event):
                 )
             )
             await edit_or_reply(
-                event, f"**- القناة {group_name} تم بنجاح صنعها {result.link}**"
+                event, f"**- القناة {group_name} تم بنجاح انشاءها {result.link}**"
             )
         except Exception as e:
             await edit_delete(event, f"**Error:**\n{e}")
@@ -60,7 +60,7 @@ async def _(event):
         if answer[0] != "error":
             await edit_or_reply(
                 event,
-                f"تم صنع المجموعة `{group_name}` بنجاح الرابط الرابط: {answer[0].link}",
+                f"تم انشاء المجموعة `{group_name}` بنجاح الرابط الرابط: {answer[0].link}",
             )
         else:
             await edit_delete(event, f"**خطأ:**\n{answer[1]}")

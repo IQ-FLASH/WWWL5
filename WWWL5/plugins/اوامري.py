@@ -247,6 +247,11 @@ async def varssett(event):
 .زخرفة الوقت 7
 .زخرفة الوقت 8
 .زخرفة الوقت 9
+.زخرفة الوقت 10
+.زخرفة الوقت 11
+.زخرفة الوقت 12
+.زخرفة الوقت 13
+.زخرفة الوقت 14
 
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
 اوامر فارات سورس فلاش @FLS_44""",
@@ -852,9 +857,9 @@ async def _(event):
 async def _(event):
     buttons = [
         [
-            Button.inline("المقلدهم", data="ALMKD5D"),
-            Button.inline("حذف المقلدهم", data="NOAZAJ4"),
-            Button.inline("تلكراف ميديا", data="TELEHTMED"),
+            Button.inline("اللي مقلدهم", data="ALMKD5D"),
+            Button.inline("حذف اللي مقلدهم", data="NOAZAJ4"),
+            Button.inline("تليجراف ميديا", data="TELEHTMED"),
         ],
         [
             Button.inline("كرر", data="TKRAR3ADI"),
@@ -881,7 +886,7 @@ async def _(event):
     buttons = [
         [
             Button.inline("نوع المعرف", data="typeusername"),
-            Button.inline("كروباتي", data="mygroups"),
+            Button.inline("جروباتي", data="mygroups"),
             Button.inline("الحاظرهم", data="whoibanhim"),
         ],
         [
