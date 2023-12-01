@@ -351,5 +351,5 @@ async def permalink(mention):
         return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
-        mention, f"❃ عزيزي [{tag}](tg://user?id={user.id}) \n❃ انضم الي القناة وستجد جميع الفارات \n❃ [اضغط هنا للانضمام](t.me/FLS_46)"
+        mention, f"❃ عزيزي \n❃ انضم الي القناة وستجد جميع الفارات \n❃ [اضغط هنا للانضمام](t.me/FLS_46)"
     )
