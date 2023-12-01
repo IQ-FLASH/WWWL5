@@ -16,7 +16,7 @@ from WWWL5.sql_helper.globals import gvarstatus
 
 DEFAULTUSER = gvarstatus("FIRST_NAME") or ALIVE_NAME
 DEFAULTUSERBIO = Config.DEFAULT_BIO or "﴿ لا تَحزَن إِنَّ اللَّهَ مَعَنا ﴾"
-ANT7AL = gvarstatus("ANT7AL") or "(اعادة الحساب|اعادة)"
+ANT7AL = gvarstatus("ANT7AL") or "(الرجوع للحساب|الرجوع)"
 
 
 @WWWL5.ar_cmd(pattern="انتحال(?:\s|$)([\s\S]*)")
@@ -72,5 +72,5 @@ async def revert(event):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID,
-            "#الاعادة\nتم بنجاح اعادة الحساب الى وضعه السابق",
+            "#الرجوع\nتم بنجاح رجوع الحساب الى وضعه السابق",
         )

@@ -63,7 +63,7 @@ async def echo(event):
         await edit_or_reply(event, "⌔∮ لم يتم تفعيل التقليد على هذا المستخدم اصلا")
 
 
-@WWWL5.ar_cmd(pattern="حذف المقلدهم( للكل)?")
+@WWWL5.ar_cmd(pattern="حذف اللي مقلدهم( للكل)?")
 async def echo(event):
     input_str = event.pattern_match.group(1)
     if input_str:
@@ -96,16 +96,16 @@ async def echo(event):
             )
 
 
-@WWWL5.ar_cmd(pattern="المقلدهم( للكل)?$")
+@WWWL5.ar_cmd(pattern="اللي مقلدهم( للكل)?$")
 async def echo(event):
     input_str = event.pattern_match.group(1)
     private_chats = ""
-    output_str = "**قائمه الاشخاص المقلدهم:\n\n"
+    output_str = "**قائمه الاشخاص اللي مقلدهم:\n\n"
     if input_str:
         lsts = get_all_echos()
         group_chats = ""
         if len(lsts) <= 0:
-            return await edit_or_reply(event, "⌔∮ لم يتم تفعيل التقليد بالاصل ")
+            return await edit_or_reply(event, "⌔∮ لم يتم تفعيل التقليد اصلا ")
         for echos in lsts:
             if echos.chat_type == "Personal":
                 if echos.user_username:
@@ -128,7 +128,7 @@ async def echo(event):
     else:
         lsts = get_echos(event.chat_id)
         if len(lsts) <= 0:
-            return await edit_or_reply(event, "لم يتم تفعيل التقليد بالاصل")
+            return await edit_or_reply(event, "لم يتم تفعيل التقليد اصلا")
 
         for echos in lsts:
             if echos.user_username:

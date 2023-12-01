@@ -27,18 +27,18 @@ def resize_image(image):
     im.save(image, "PNG")
 
 
-@WWWL5.ar_cmd(pattern="(ت(ل)?ك(راف)?) ?(m|t|ميديا|نص)(?:\s|$)([\s\S]*)")
+@WWWL5.ar_cmd(pattern="(ت(لي)?ج(راف)?) ?(m|t|ميديا|نص)(?:\s|$)([\s\S]*)")
 async def _(event):
-    jmubevent = await edit_or_reply(event, "** ⌔∮ جار انشاء رابط تلكراف**")
+    jmubevent = await edit_or_reply(event, "** ⌔∮ جار انشاء رابط تليجراف**")
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID,
-            f" ⌔∮ انشاء حساب تلكراف جديد {auth_url} لهذه الجلسة. \n**لا تعطي هذا الرابط لاي احد, حتى لو قالو انهم من شركة التلكرام!**",
+            f" ⌔∮ انشاء حساب تليجراف جديد {auth_url} لهذه الجلسة. \n**لا تعطي هذا الرابط لاي احد, حتى لو قالو انهم من شركة التلكرام!**",
         )
     optional_title = event.pattern_match.group(5)
     if not event.reply_to_msg_id:
         return await jmubevent.edit(
-            "** ⌔∮ قم بالرد على هذه الرسالة للحصول على رابط تلكراف فورا**",
+            "** ⌔∮ قم بالرد على هذه الرسالة للحصول على رابط تليجراف فورا**",
         )
 
     start = datetime.now()

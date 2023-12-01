@@ -4,7 +4,7 @@ from telethon.sync import errors
 from WWWL5 import WWWL5
 
 
-@WWWL5.ar_cmd(pattern="كروباتي$")
+@WWWL5.ar_cmd(pattern="جروباتي$")
 async def oeo(event):
     result = await WWWL5(functions.channels.GetGroupsForDiscussionRequest())
     alist = []
