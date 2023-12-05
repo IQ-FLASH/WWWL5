@@ -407,6 +407,36 @@ async def permalink(mention):
     )
 
 
+@WWWL5.ar_cmd(pattern="رفع اخويا(?: |$)(.*)")
+async def permalink(mention):
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if custom:
+        return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
+    tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    await edit_or_reply(
+        mention, f"❃ المستخدم [{tag}](tg://user?id={user.id}) \n❃ تـم رفع اخوك 🌚♥️"
+    )
+
+
+@WWWL5.ar_cmd(pattern="رفع اختي(?: |$)(.*)")
+async def permalink(mention):
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if user.id == 5656828413:
+        return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
+    if user.id == 5627420357:
+        return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
+    if user.id == 203585:
+        return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
+    tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    await edit_or_reply(
+        mention, f"❃ المستخدم [{tag}](tg://user?id={user.id}) \n❃ تـم رفعها اختك 🌚♥️"
+    )
+
+
 @WWWL5.ar_cmd(pattern="الفارات$")
 async def _(event):
     zzevent = await edit_or_reply(event, "❃ عزيزي \n❃ انضم الي القناة وستجد جميع الفارات \n❃ [اضغط هنا للانضمام](t.me/FLS_46)   ➪➪➪")
