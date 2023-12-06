@@ -12,13 +12,13 @@ from WWWL5 import WWWL5
 @WWWL5.ar_cmd(pattern="تجميع$")
 async def _(event):
     await event.edit("حسنا, تأكد من انك مشترك ب قنوات الاشتراك الاجباري لتجنب الأخطأء")
-    channel_entity = await WWWL5.get_entity("@t06bot")
-    await WWWL5.send_message("@t06bot", "/start")
+    channel_entity = await WWWL5.get_entity("@EEObot")
+    await WWWL5.send_message("@EEObot", "/start")
     await asyncio.sleep(5)
-    msg0 = await WWWL5.get_messages("@t06bot", limit=1)
+    msg0 = await WWWL5.get_messages("@EEObot", limit=1)
     await msg0[0].click(2)
     await asyncio.sleep(5)
-    msg1 = await WWWL5.get_messages("@t06bot", limit=1)
+    msg1 = await WWWL5.get_messages("@EEObot", limit=1)
     await msg1[0].click(0)
 
     chs = 1
@@ -54,7 +54,7 @@ async def _(event):
             except:
                 bott = url.split("/")[-1]
                 await WWWL5(ImportChatInviteRequest(bott))
-            msg2 = await WWWL5.get_messages("@t06bot", limit=1)
+            msg2 = await WWWL5.get_messages("@EEObot", limit=1)
             await msg2[0].click(text="تحقق")
             chs += 1
             await event.edit("- تم بنجاح الاشتراك في {chs} قناة")
