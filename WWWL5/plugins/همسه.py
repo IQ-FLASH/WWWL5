@@ -34,11 +34,45 @@ async def _(event):
        pattern="اكس او$"
     )
 )
-# كتابة وتعديل فريق سبايدر  #@lMl10l
+# كتابة وتعديل فريق فلاش  #@lMl10l
 async def gamez(event):
     if event.fwd_from:
         return
     jmusername = "@xoBot"
+    uunzz = "play"
+    if event.reply_to_msg_id:
+        await event.get_reply_message()
+    tap = await bot.inline_query(jmusername, uunzz)
+    await tap[0].click(event.chat_id)
+    await event.delete()
+    
+@borg.on(
+    admin_cmd(
+       pattern="Xo$"
+    )
+)
+# كتابة وتعديل فريق فلاش  #@lMl10l
+async def gamez(event):
+    if event.fwd_from:
+        return
+    jmusername = "@xoBot"
+    uunzz = "play"
+    if event.reply_to_msg_id:
+        await event.get_reply_message()
+    tap = await bot.inline_query(jmusername, uunzz)
+    await tap[0].click(event.chat_id)
+    await event.delete()
+    
+@borg.on(
+    admin_cmd(
+       pattern="حجره$"
+    )
+)
+# كتابة وتعديل فريق فلاش  #@lMl10l
+async def gamez(event):
+    if event.fwd_from:
+        return
+    jmusername = "@Eggbbot"
     uunzz = "play"
     if event.reply_to_msg_id:
         await event.get_reply_message()
