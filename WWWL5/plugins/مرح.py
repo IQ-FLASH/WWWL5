@@ -40,7 +40,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -56,7 +56,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -73,7 +73,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -90,7 +90,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -108,7 +108,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -132,7 +132,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -148,7 +148,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ 101% ده مطوري كده عيب 🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ 101% ده مطوري كده عيب 🤌😹**")
@@ -165,7 +165,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -183,7 +183,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ 0% ده مطوري كده عيب 🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ 0% ده مطوري كده عيب 🤌😹**")
@@ -200,7 +200,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ 101% ده مطوري كده عيب 🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ 101% ده مطوري كده عيب 🤌😹**")
@@ -230,7 +230,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -258,7 +258,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ مبرمجي ده مطوري كده عيب بطل لعب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ مبرمجي ده مطوري كده عيب بطل لعب🤌😹**")
@@ -275,7 +275,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ 101% ده مطوري كده عيب 🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ 101% ده مطوري كده عيب 🤌😹**")
@@ -293,7 +293,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -310,7 +310,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -327,7 +327,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -344,7 +344,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -361,7 +361,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -378,7 +378,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -395,7 +395,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -416,7 +416,7 @@ async def permalink(mention):
         return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
-        mention, f"❃ المستخدم [{tag}](tg://user?id={user.id}) \n❃ تـم رفع اخوك 🌚♥️"
+        mention, f"❃ المستخدم [{tag}](tg://user?id={user.id}) \n❃ تـم رفعه اخوك 🌚♥️"
     )
 
 
@@ -425,7 +425,7 @@ async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    if user.id == 5656828413:
+    if user.id == 6456641797:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
@@ -434,6 +434,23 @@ async def permalink(mention):
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
         mention, f"❃ المستخدم [{tag}](tg://user?id={user.id}) \n❃ تـم رفعها اختك 🌚♥️"
+    )
+
+
+@WWWL5.ar_cmd(pattern="رفع شحلف(?: |$)(.*)")
+async def permalink(mention):
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if user.id == 6456641797:
+        return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
+    if user.id == 5627420357:
+        return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
+    if user.id == 203585:
+        return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
+    tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    await edit_or_reply(
+        mention, f"❃ المستخدم [{tag}](tg://user?id={user.id}) \n❃ تـم رفع هذا الكائن شحلف كبير 😹😹"
     )
 
 
