@@ -259,11 +259,11 @@ async def permalink(mention):
     if not user:
         return
     if user.id == 6456641797:
-        return await edit_or_reply(mention, f"**❃ مبرمجي ده مطوري كده عيب بطل لعب🤌😹**")
+        return await edit_or_reply(mention, f"**❃ مبرمج السورس - بطل لعب 🤌😹**")
     if user.id == 5627420357:
-        return await edit_or_reply(mention, f"**❃ مبرمجي ده مطوري كده عيب بطل لعب🤌😹**")
+        return await edit_or_reply(mention, f"**❃ مبرمج السورس - بطل لعب 🤌😹**")
     if user.id == 203585:
-        return await edit_or_reply(mention, f"**❃ مبرمجي ده مطوري كده عيب بطل لعب🤌😹**")
+        return await edit_or_reply(mention, f"**❃ مبرمج السورس - بطل لعب 🤌😹**")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
         mention, f"- المستخدم [{muh}](tg://user?id={user.id}) شغله هو {rezw}"
