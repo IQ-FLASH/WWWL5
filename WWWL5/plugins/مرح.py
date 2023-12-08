@@ -178,23 +178,6 @@ async def permalink(mention):
     )
 
 
-@WWWL5.ar_cmd(pattern="نسبة الغباء(?: |$)(.*)")
-async def permalink(mention):
-    user, custom = await get_user_from_event(mention)
-    if not user:
-        return
-    if user.id == 6456641797:
-        return await edit_or_reply(mention, f"**❃ 0% ده مطوري كده عيب 🤌😹**")
-    if user.id == 5627420357:
-        return await edit_or_reply(mention, f"**❃ 0% ده مطوري كده عيب 🤌😹**")
-    if user.id == 203585:
-        return await edit_or_reply(mention, f"**❃ 0% ده مطوري كده عيب 🤌😹**")
-    tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
-    await edit_or_reply(
-        mention, f"نسبة الغباء لـ [{muh}](tg://user?id={user.id}) هـي {rzona} 😂💔"
-    )
-
-
 @WWWL5.ar_cmd(pattern="نسبة الجمال(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
@@ -206,9 +189,28 @@ async def permalink(mention):
         return await edit_or_reply(mention, f"**❃ 101% ده مطوري كده عيب 🤌😹**")
     if user.id == 203585:
         return await edit_or_reply(mention, f"**❃ 101% ده مطوري كده عيب 🤌😹**")
-    tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    sos = random.choice(rr7)
     await edit_or_reply(
-        mention, f"نسبة الجمال لـ [{muh}](tg://user?id={user.id}) هـي {rzona} 🌝"
+        mention, f"- نسبة الانوثة لـ [{muh}](tg://user?id={user.id}) هـي {sos} 🥵🖤"
+    )
+
+
+@WWWL5.ar_cmd(pattern="نسبة الغباء(?: |$)(.*)")
+async def permalink(mention):
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if user.id == 6456641797:
+        return await edit_or_reply(mention, f"**❃ 0% ده مطوري كده عيب 🤌😹**")
+    if user.id == 5627420357:
+        return await edit_or_reply(mention, f"**❃ 0% ده مطوري كده عيب 🤌😹**")
+    if user.id == 203585:
+        return await edit_or_reply(mention, f"**❃ 0% ده مطوري كده عيب 🤌😹**")
+    muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    sos = random.choice(rr7)
+    await edit_or_reply(
+        mention, f"- نسبة الانوثة لـ [{muh}](tg://user?id={user.id}) هـي {sos} 🥵🖤"
     )
 
 
