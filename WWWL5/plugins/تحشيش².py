@@ -50,7 +50,7 @@ async def permalink(mention):
     sos = random.choice(rr7)
     await edit_or_reply(mention, f"᯽︙ نسبة الانوثة لـ [{muh}](tg://user?id={user.id}) هـي {sos} 🥵🖤")
 
-@WWWL5.ar_cmd(
+##@WWWL5.ar_cmd(
     pattern="نسبة الغباء(?:\s|$)([\s\S]*)",
     command=("نسبة الغباء", plugin_category),
 )
@@ -152,7 +152,7 @@ async def permalink(mention):
     rzona = random.choice(rr7)
     await edit_or_reply(mention, f"نسبة الخيانه 🙎🏼‍♀️ لـ [{muh}](tg://user?id={user.id}) هـي {rzona}🎈🧸")
 
-@WWWL5.ar_cmd(
+##@WWWL5.ar_cmd(
     pattern="نسبة الجمال(?:\s|$)([\s\S]*)",
     command=("نسبة الجمال", plugin_category),
 )
