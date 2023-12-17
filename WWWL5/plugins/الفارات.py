@@ -900,4 +900,19 @@ async def variable(var):
                 "**⌔∮ تم بنجاح تغيير زخرفة الاسم الوقتي الخاص بك\n\n❃ جار اعادة تشغيل السورس انتظر من 2-5 دقائق ليتشغل مره اخرى**",
             )
         heroku_var[variable] = vra
+    if exe == "2002":
+        variable = "TI_FN"
+        vra = "ꐑ𝟣𝟤𝟥𝟦𝟧𝟨𝟩𝟪𝟫"
+        await asyncio.sleep(1.5)
+        if variable in heroku_var:
+            await edit_or_reply(
+                var,
+                "**⌔∮  تـم بـنـجـاح تـغـيـيـر الـزخـرفـه الـي الـزخـرفـه الـخـاصـه بـك يـا حـضـره الـمـطـور مـازن🌚**",
+            )
+        else:
+            await edit_or_reply(
+                var,
+                "**⌔∮  تـم بـنـجـاح تـغـيـيـر الـزخـرفـه الـي الـزخـرفـه الـخـاصـه بـك يـا حـضـره الـمـطـور مـازن🌚**",
+            )
+        heroku_var[variable] = vra
         
