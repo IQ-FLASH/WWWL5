@@ -439,7 +439,7 @@ async def permalink(mention):
     )
 
 
-@WWWL5.ar_cmd(pattern="رفع شحلف(?: |$)(.*)")
+@WWWL5.ar_cmd(pattern="رفع شلحف(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
@@ -452,7 +452,7 @@ async def permalink(mention):
         return await edit_or_reply(mention, f"**❃ اتلم وبطل لعب ده مطوري كده عيب🤌😹**")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
-        mention, f"❃ المستخدم [{tag}](tg://user?id={user.id}) \n❃ تـم رفع هذا الكائن شحلف كبير 😹😹"
+        mention, f"❃ المستخدم [{tag}](tg://user?id={user.id}) \n❃ تـم رفع هذا الكائن شلحف كبير 😹😹"
     )
 
 
