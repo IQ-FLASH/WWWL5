@@ -290,6 +290,24 @@ async def permalink(mention):
     )
 
 
+@WWWL5.ar_cmd(pattern="نسبة التناحه(?: |$)(.*)")
+async def permalink(mention):
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if user.id == 6456641797:
+        return await edit_or_reply(mention, f"**❃ -0% ده مطوري كده عيب 🤌😹**")
+    if user.id == 5627420357:
+        return await edit_or_reply(mention, f"**❃ -0% ده مطوري كده عيب 🤌😹**")
+    if user.id == 203485:
+        return await edit_or_reply(mention, f"**❃ -0% ده مطوري كده عيب 🤌😹**")
+    muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    sos = random.choice(kz)
+    await edit_or_reply(
+        mention, f"- نسبة التناحه في دمه [{muh}](tg://user?id={user.id}) هـي {sos} 🫣😹"
+    )
+
+
 @WWWL5.ar_cmd(pattern="رفع حيوان(?: |$)(.*)")
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
