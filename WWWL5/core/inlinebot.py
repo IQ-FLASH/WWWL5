@@ -53,7 +53,7 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"**▾∮ مرحبا عزيزي {mention}**\n**▾اليكَ قائمة بازرار مضمنة لاوامر ↫**⩹⌯⊷━♢ ⦓ ƚᥱᥣᥱƚ𝗁᥆ꪀ ᥉ρᎥժᥱᖇ ⦔ ♢━⊶⌯⩺**\n[𝙎𝙋𝙄𝘿𝞝𝙍 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧸♥](https://t.me/EE_20)\n\n"
+    text = f"▾∮ مرحبا عزيزي {mention}\n▾اليكَ قائمة بازرار مضمنة لاوامر ↫⩹⌯⊷━♢ ⦓ ƚᥱᥣᥱƚ𝗁᥆ꪀ ƒӀɑՏh ⦔ ♢━⊶⌯⩺**\n[𝙁𝙡𝙖𝙨𝙝 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧸♥](https://t.me/FLS_44)\n\n"
     buttons = [
         (Button.inline("معلومات الملفات 🗂", data="check"),),
         (
@@ -228,7 +228,7 @@ async def inline_handler(event):
             buttons = [
                 (
                     Button.inline("Stats", data="stats"),
-                    Button.url("DEV", "https://t.me/EE_20"),
+                    Button.url("DEV", "https://t.me/FLS_44"),
                 )
             ]
             ALIVE_PIC = gvarstatus("ALIVE_PIC")
@@ -574,7 +574,7 @@ async def inline_handler(event):
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="[𝙎𝙋𝙄𝘿𝞝𝙍 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧸♥](https://t.me/EE_20)",
+            title="[𝙁𝙡𝙖𝙨𝙝 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧸♥](https://t.me/FLS_44)",
             description="لتنصيبه لك",
             url="t.me/EE_20",
             thumb=photo,
