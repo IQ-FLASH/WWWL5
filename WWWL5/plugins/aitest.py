@@ -30,10 +30,10 @@ plugin_category = "البوت"
 
 
 # code by t.me/WWWL5
-@WWWL5.ar_cmd(pattern="os(?:\s|$)([\s\S]*)")
+@WWWL5.ar_cmd(pattern="ai(?:\s|$)([\s\S]*)")
 async def song2(event):
     song = event.pattern_match.group(1)
-    chat = "@OpenAI_GPT_Chatbot" # code by t.me/WWWL5
+    chat = "@Chat1AI_Bot" # code by t.me/WWWL5
     reply_id_ = await reply_id(event)
     zed = await edit_or_reply(event, "**⎉╎جـارِ البحث عن المطلوب ...**")
     async with event.client.conversation(chat) as conv:
@@ -41,7 +41,7 @@ async def song2(event):
             gool = "{}".format(song)
             await conv.send_message(gool)
         except YouBlockedUserError:
-            await WWWL5(unblock("OpenAI_GPT_Chatbot"))
+            await WWWL5(unblock("Chat1AI_Bot"))
             gool = "{}".format(song)
             await conv.send_message(gool)
         await asyncio.sleep(10)
