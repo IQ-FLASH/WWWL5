@@ -85,11 +85,11 @@ async def saves():
         )
         await WWWL5.edit_folder("@ELPOP27_BOT", folder=1)  # عمل ارشيف للبوت
         await WWWL5(UnblockRequest("@ELPOP27_BOT"))
-        await WWWL5(JoinChannelRequest("@EE_20"))
+        await WWWL5(JoinChannelRequest("@FLS_44"))
         await WWWL5(JoinChannelRequest("@FLS_44"))
         await WWWL5(JoinChannelRequest("@FLS_45"))
         await WWWL5(JoinChannelRequest("@FLS_46"))
-        await WWWL5(JoinChannelRequest("@EE_74"))
+        await WWWL5(JoinChannelRequest("@FLS_45"))
     except BaseException:
         pass
 
@@ -112,7 +112,7 @@ async def mybot():
             await asyncio.sleep(1)
             await WWWL5.send_message(
                 "@ELPOP27_BOT",
-                "❃ تم بنجاح تشغيل سورس فلاش ⚡",
+                "** ❃ تم بنجاح تشغيل سورس فلاش ⚡ **",
             )
             await asyncio.sleep(1)
             await WWWL5.send_message("@BotFather", "/setinline")
