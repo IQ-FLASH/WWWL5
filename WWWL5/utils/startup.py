@@ -112,7 +112,7 @@ async def mybot():
             await asyncio.sleep(1)
             await WWWL5.send_message(
                 "@ELPOP27_BOT",
-                "⎊ تم بنجاح تشغيل سورس فلاش ⚡",
+                "❃ تم بنجاح تشغيل سورس فلاش ⚡",
             )
             await asyncio.sleep(1)
             await WWWL5.send_message("@BotFather", "/setinline")
@@ -324,7 +324,7 @@ async def verifyLoggerGroup():
         except Exception as e:
             LOGS.error("هنالك خطا ما للتعرف على فار كروب الحفظ\n" + str(e))
     else:
-        descript = "⎊ هذه هي مجموعه الاشعارات الخاصه بك لا تحذفها"
+        descript = "❃ هذه هي مجموعه الاشعارات الخاصه بك لا تحذفها"
         photobt = await WWWL5.upload_file(file="razan/pic/spider1.jpg")
         _, groupid = await create_supergroup(
             "جروب اشعارات فلاش", WWWL5, Config.TG_BOT_USERNAME, descript, photobt
@@ -349,7 +349,7 @@ async def verifyLoggerGroup():
         except Exception as e:
             LOGS.error("حدث خطأ اثناء التعرف على كروب التخزين\n" + str(e))
     else:
-        descript = "⎊ لا تحذف او تغادر المجموعه وظيفتها حفظ الرسائل"
+        descript = "❃ لا تحذف او تغادر المجموعه وظيفتها حفظ الرسائل"
         photobt = await WWWL5.upload_file(file="razan/pic/spider2.jpg")
         _, groupid = await create_supergroup(
             "جروب تخزين فلاش", WWWL5, Config.TG_BOT_USERNAME, descript, photobt
