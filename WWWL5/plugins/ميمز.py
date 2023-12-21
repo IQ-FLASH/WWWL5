@@ -11,7 +11,7 @@ from ..helpers.utils import reply_id
 # الي يخمط ويكول من كتابتي 
 @WWWL5.on(admin_cmd(pattern="حالتي ?(.*)"))
 async def _(event):
-    await event.edit("**⎊ يتم التاكد من حالتك اذا كنت محظور او لا**")
+    await event.edit("**❃ يتم التاكد من حالتك اذا كنت محظور او لا**")
     async with bot.conversation("@SpamBot") as conv:
         try:
             response = conv.wait_event(
@@ -45,7 +45,7 @@ async def _(event):
                     return await event.edit(
                         "**▾∮ يجب ان يكون حجم الاغنيه من 5 الى 10 ثواني **."
                     )
-                await event.edit("⎊ انتظر قليلا")
+                await event.edit("❃ انتظر قليلا")
                 result = await conv.get_response()
                 await event.client.send_read_acknowledge(conv.chat_id)
             except YouBlockedUserError:
@@ -87,26 +87,26 @@ async def _(event):
 async def jepvois(vois):
   rl = random.randint(3,267)
   url = f"https://t.me/DwDi1/{rl}"
-  await vois.client.send_file(vois.chat_id,url,caption="⎊︙ BY : @FLS_44 🎀",parse_mode="html")
+  await vois.client.send_file(vois.chat_id,url,caption="❃︙ BY : @FLS_44 🎀",parse_mode="html")
   await vois.delete()
 
 @WWWL5.on(admin_cmd(outgoing=True, pattern="شعر$"))
 async def jepvois(vois):
   rl = random.randint(2,101)
   url = f"https://t.me/L1BBBL/{rl}"
-  await vois.client.send_file(vois.chat_id,url,caption="⎊︙ BY : @FLS_44 🎀",parse_mode="html")
+  await vois.client.send_file(vois.chat_id,url,caption="❃︙ BY : @FLS_44 🎀",parse_mode="html")
   await vois.delete()
 @WWWL5.on(admin_cmd(outgoing=True, pattern="قران$"))
 async def jepvois(vois):
   rl = random.randint(2,101)
   url = f"https://t.me/QuraanJep/{rl}"
-  await vois.client.send_file(vois.chat_id,url,caption="⎊︙ BY : @FLS_44 🤲🏻☪️",parse_mode="html")
+  await vois.client.send_file(vois.chat_id,url,caption="❃︙ BY : @FLS_44 🤲🏻☪️",parse_mode="html")
   await vois.delete()
 @WWWL5.on(admin_cmd(outgoing=True, pattern="ثيم$"))
 async def jepThe(theme):
   rl = random.randint(2,510)
   url = f"https://t.me/GSSSD/{rl}"
-  await theme.client.send_file(theme.chat_id,url,caption="⎊︙ THEME BY : @FLS_44 🎊",parse_mode="html")
+  await theme.client.send_file(theme.chat_id,url,caption="❃︙ THEME BY : @FLS_44 🎊",parse_mode="html")
   await theme.delete()
 @WWWL5.on(admin_cmd(outgoing=True, pattern="لاتغلط$"))
 async def jepmeme(memejep):

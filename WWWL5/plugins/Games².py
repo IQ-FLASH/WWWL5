@@ -40,8 +40,8 @@ R = [
     "  ⓱ ⪼  [PenaltyShooter2](https://t.me/gamee?game=PenaltyShooter2)   \n"
     "  ⓲ ⪼  [GroovySki](https://t.me/gamee?game=GroovySki)   \n"
     "  ⓳ ⪼  [SpaceTraveler](https://t.me/gamee?game=SpaceTraveler)   \n"
-    "⎊ مطور السورس **⪼ [❥︎𝕾🅔🅛🅟🅞🅟𝕾](t.me/P_O28)   \n"
-    "⎊ قناة السورس **⪼ [ S̴O̴U̴R̴C̴E̴ F̴L̴A̴S̴H̴](t.me/FLS_44)   "
+    "❃ مطور السورس **⪼ [❥︎𝕾🅔🅛🅟🅞🅟𝕾](t.me/P_O28)   \n"
+    "❃ قناة السورس **⪼ [ S̴O̴U̴R̴C̴E̴ F̴L̴A̴S̴H̴](t.me/FLS_44)   "
 ]
 
 @WWWL5.on(admin_cmd(pattern="الالعاب2$"))

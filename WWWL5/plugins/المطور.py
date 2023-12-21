@@ -4,7 +4,7 @@ from WWWL5 import WWWL5
 
 from ..Config import Config
 
-ROZ_PIC = "https://telegra.ph/file/06d02c6abd3aec8ac9569.jpg"
+ROZ_PIC = "https://telegra.ph/file/738661f85fe3e4fd54d20.jpg"
 RAZAN = Config.TG_BOT_USERNAME
 ROZ_T = (
     f"**ܩߺ𐢋ߺ𐬛𐬠 ܚࡅߺ𐬛𐬠ܚࡅߺ ܦ࠭ߺࡋߺוࡅࠦࡅࡅࡅߺ **\n"

@@ -16,12 +16,12 @@ translator = Translator()
 @WWWL5.ar_cmd(pattern="تفعيل الترجمة")
 async def traenjm(event):
     if gvarstatus("translateen"):
-        await edit_delete(event, "⎊ **الترجمة التلقائية مفعلة بالأصل ✅**")
+        await edit_delete(event, "❃ **الترجمة التلقائية مفعلة بالأصل ✅**")
         return
     if not gvarstatus("translateen"):
         addgvar("translateen", "Done")
         await edit_delete(
-            event, "⎊ **تم بنجاح تفعيل الترجمة التلقائية ✅**"
+            event, "❃ **تم بنجاح تفعيل الترجمة التلقائية ✅**"
         )
         return
 
@@ -29,11 +29,11 @@ async def traenjm(event):
 @WWWL5.ar_cmd(pattern="تعطيل الترجمة")
 async def stoptraenjm(event):
     if not gvarstatus("translateen"):
-        await edit_delete(event, "⎊ **الترجمة التلقائية غير مفعلة بالأصل ❌**")
+        await edit_delete(event, "❃ **الترجمة التلقائية غير مفعلة بالأصل ❌**")
         return
     if gvarstatus("translateen"):
         delgvar("translateen")
-        await edit_delete(event, "⎊ **تم تعطيل الترجمة التلقائية ❌**")
+        await edit_delete(event, "❃ **تم تعطيل الترجمة التلقائية ❌**")
         return
 
 
