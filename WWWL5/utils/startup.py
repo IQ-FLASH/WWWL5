@@ -131,7 +131,7 @@ async def startupmessage():
             if BOTLOG:
                 await WWWL5.tgbot.send_file(
                     BOTLOG_CHATID,
-                    "https://telegra.ph/file/06d02c6abd3aec8ac9569.jpg",
+                    "https://telegra.ph/file/738661f85fe3e4fd54d20.jpg",
                     caption="**شكرا لتنصيبك تيلثون فلاش**\n**`لعرض الاوامر ارسل `.الاوامر**\n**اضغط على الزر ي الاسفل**",
                     buttons=[(Button.inline("اضغط هنا", data="initft_2"),)],
                 )
