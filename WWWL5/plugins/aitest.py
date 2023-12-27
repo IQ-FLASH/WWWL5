@@ -30,7 +30,7 @@ plugin_category = "البوت"
 
 
 # code by t.me/WWWL5
-@WWWL5.ar_cmd(pattern="ai(?:\s|$)([\s\S]*)")
+@WWWL5.ar_cmd(pattern="#(?:\s|$)([\s\S]*)")
 async def song2(event):
     song = event.pattern_match.group(1)
     chat = "@Chat1AI_Bot" # code by t.me/WWWL5
