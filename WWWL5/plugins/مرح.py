@@ -152,11 +152,12 @@ async def permalink(mention):
         return await edit_or_reply(mention, f"**❃ 101% ده مطوري كده عيب 🤌😹**")
     if user.id == 5627420357:
         return await edit_or_reply(mention, f"**❃ 101% ده مطوري كده عيب 🤌😹**")
-    if user.id == 203585:
+    if user.id == 203485:
         return await edit_or_reply(mention, f"**❃ 101% ده مطوري كده عيب 🤌😹**")
-    tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    muh = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    sos = random.choice(kz)
     await edit_or_reply(
-        mention, f"نـسـبتكم انـت و [{muh}](tg://user?id={user.id}) هـي {rza} 😔🖤"
+        mention, f"❃ نـسـبتكم انـت و [{muh}](tg://user?id={user.id}) هـي {sos} 🖤"
     )
 
 
