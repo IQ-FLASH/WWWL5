@@ -13,14 +13,14 @@ tepthon = ['yes']
 
 @WWWL5.on(admin_cmd(pattern="تجميع دعمكم"))
 async def _(event):
-    await event.edit("**᯽︙سيتم تجميع النقاط من بوت دعمكم , قبل كل شي تأكد من انك قمت بالانضمام الى القنوات الاشتراك الاجباري للبوت لعدم حدوث اخطاء**")
-    channel_entity = await WWWL5.get_entity(bot_username6)
+    await event.edit("**▿∲ سيتم تجميع النقاط , قبل كل شي تأكد من انك قمت بالانضمام الى القنوات الاشتراك الاجباري للبوت لعدم حدوث اخطاء**")
+    channel_entity = await WWWL5.get_entity(bot_username)
     await WWWL5.send_message('@DamKombot', '/start')
     await asyncio.sleep(4)
-    msg0 = await WWWL5.get_messages(bot_username6, limit=1)
+    msg0 = await WWWL5.get_messages(bot_username, limit=1)
     await msg0[0].click(1)
     await asyncio.sleep(4)
-    msg1 = await WWWL5.get_messages(bot_username6, limit=1)
+    msg1 = await WWWL5.get_messages(bot_username, limit=1)
     await msg1[0].click(0)
     chs = 1
     for i in range(100):
@@ -38,7 +38,7 @@ async def _(event):
                 if entity:
                     await WWWL5(JoinChannelRequest(entity.id))
                     await asyncio.sleep(4)
-                    msg2 = await WWWL5.get_messages(bot_username6, limit=1)
+                    msg2 = await WWWL5.get_messages(bot_username, limit=1)
                     await msg2[0].click(text='اشتركت ✅')
                     chs += 1
                     await event.edit(f"تم الانظمام الى القناة رقم {chs}")
