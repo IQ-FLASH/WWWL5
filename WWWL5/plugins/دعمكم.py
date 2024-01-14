@@ -1,3 +1,16 @@
+#اشهد أن لا إله إلا الله واشهد أن محمدًا عبده ورسوله 
+from WWWL5 import WWWL5
+from telethon.tl.functions.messages import GetHistoryRequest
+from telethon.tl.functions.channels import JoinChannelRequest
+from telethon.tl.functions.messages import ImportChatInviteRequest
+import requests
+import asyncio
+from telethon import events
+c = requests.session()
+bot_username = '@MARKTEBOT'
+tepthon = ['yes']
+
+
 @WWWL5.on(admin_cmd(pattern="تجميع دعمكم"))
 async def _(event):
     await event.edit("**᯽︙سيتم تجميع النقاط من بوت دعمكم , قبل كل شي تأكد من انك قمت بالانضمام الى القنوات الاشتراك الاجباري للبوت لعدم حدوث اخطاء**")
