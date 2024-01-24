@@ -29,7 +29,7 @@ async def mutejep(event):
             )
         if event.chat_id == WWWL5.uid:
             return await edit_delete(event, "**𖡛... . لمـاذا تࢪيـد كتم نفسـك؟  ...𖡛**")
-        if event.chat_id == 5656828413:
+        if event.chat_id == 6456641797:
             return await edit_delete(event, "** يبني . . لا يمڪنني كتـم مطـور السـورس  ╰**")
         if event.chat_id == 5627420357:
             return await edit_delete(event, "** يبني . . لا يمڪنني كتـم مطـور السـورس  ╰**")               
@@ -59,7 +59,7 @@ async def mutejep(event):
         if user.id == WWWL5.uid:
             return await edit_or_reply(event, "**𖡛... . لمـاذا تࢪيـد كتم نفسـك؟  ...𖡛**")
             return await edit_or_reply(event, "** يبني . . لا يمڪنني كتـم مطـور السـورس  ╰**")
-        if user.id == 5656828413:
+        if user.id == 6456641797:
             return await edit_or_reply(event, "** يبني . . لا يمڪنني كتـم مطـور السـورس  ╰**")     
         if user.id == 5627420357:
             return await edit_or_reply(event, "** يبني . . لا يمڪنني كتـم مطـور السـورس  ╰**")                

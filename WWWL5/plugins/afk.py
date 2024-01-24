@@ -112,18 +112,18 @@ async def on_afk(event):
         msg = None
         if AFK_.afk_type == "media":
             if AFK_.reason:
-                message_to_reply = f"⪼ انا الان في حالة عدم الاتصال منذ\n{endtime}\nالسبب : {AFK_.reason}"
+                message_to_reply = f"❃︙ انا الان في وضعية عدم الاتصال 💤 \n︙ تم تفعيل وضع السليب منذ 🕐 : {endtime}\n❃︙ السـبب : {AFK_.reason}"
             else:
-                message_to_reply = f"⪼ انا الان في حالة عدم الاتصال منذ\n{endtime}"
+                message_to_reply = f"❃︙ انا الان في وضعية عدم الاتصال 💤 \n︙ تم تفعيل وضع السليب منذ 🕐 : {endtime}"
             if event.chat_id:
                 msg = await event.reply(message_to_reply, file=AFK_.media_afk.media)
         elif AFK_.afk_type == "text":
             if AFK_.msg_link and AFK_.reason:
-                message_to_reply = f"⪼ انا الان في حالة عدم الاتصال منذ .\n\n{endtime}\nالسبب : {AFK_.reason}"
+                message_to_reply = f"❃︙ انا الان في وضعية عدم الاتصال 💤 \n︙ تم تفعيل وضع السليب منذ 🕐 : {endtime}\n❃︙ السـبب : {AFK_.reason}"
             elif AFK_.reason:
-                message_to_reply = f"⪼انا الان في حالة عدم الاتصال منذ .\n\n{endtime}\nالسبب : {AFK_.reason}"
+                message_to_reply = f"❃︙ انا الان في وضعية عدم الاتصال 💤 \n︙ تم تفعيل وضع السليب منذ 🕐 : {endtime}\n❃︙ السـبب : {AFK_.reason}"
             else:
-                message_to_reply = f"⪼ انا الان في حالة عدم الاتصال منذ.\n\n{endtime}"
+                message_to_reply = f"❃︙ انا الان في وضعية عدم الاتصال 💤 \n︙ تم تفعيل وضع السليب منذ 🕐 : {endtime}"
             if event.chat_id:
                 msg = await event.reply(message_to_reply)
         if event.chat_id in AFK_.last_afk_message:
@@ -184,20 +184,20 @@ async def _(event):
         AFK_.USERAFK_ON = f"on: {AFK_.reason}"
         if AFK_.reason:
             await edit_delete(
-                event, f"⪼ انا الان في حالة عدم الاتصال بسبب\n{AFK_.reason}", 5
+                event, f"❃ انا الان في حالة عدم الاتصال بسبب\n{AFK_.reason}", 5
             )
         else:
-            await edit_delete(event, "⪼ انا الان في حالة عدم الاتصال", 5)
+            await edit_delete(event, "❃ انا الان في حالة عدم الاتصال", 5)
         if BOTLOG:
             if AFK_.reason:
                 await event.client.send_message(
                     BOTLOG_CHATID,
-                    f"⪼ وضع السليب \nتم تشغيل وضع السليب، والسبب هو \n{AFK_.reason}",
+                    f"❃ وضع السليب \nتم تشغيل وضع السليب، والسبب هو \n{AFK_.reason}",
                 )
             else:
                 await event.client.send_message(
                     BOTLOG_CHATID,
-                    "⪼ وضع السليب \nتم تشغيل وضع السليب، بدون ذكر اي سبب",
+                    "❃ وضع السليب \nتم تشغيل وضع السليب، بدون ذكر اي سبب",
                 )
 
 
@@ -207,11 +207,11 @@ async def _(event):
     media_t = media_type(reply)
     if media_t == "Sticker" or not media_t:
         return await edit_or_reply(
-            event, "⪼ امر السليب : الرجاء قم بالرد على الصورة بالامر "
+            event, "❃ امر السليب : الرجاء قم بالرد على الصورة بالامر "
         )
     if not BOTLOG:
         return await edit_or_reply(
-            event, "⪼ لإستخدام هذا الامر يجب اضافة متغير PRIVATE_GROUP_BOT_API_ID "
+            event, "❃ لإستخدام هذا الامر يجب اضافة متغير PRIVATE_GROUP_BOT_API_ID "
         )
     AFK_.USERAFK_ON = {}
     AFK_.afk_time = None
@@ -233,7 +233,7 @@ async def _(event):
         AFK_.USERAFK_ON = f"on: {AFK_.reason}"
         if AFK_.reason:
             await edit_delete(
-                event, f"⪼ انا الان في حالة عدم الاتصال بسبب\n{AFK_.reason}", 5
+                event, f"❃ انا الان في حالة عدم الاتصال بسبب\n{AFK_.reason}", 5
             )
         else:
             await edit_delete(event, "انا الان في حالة عدم الاتصال", 5)
@@ -241,10 +241,10 @@ async def _(event):
         if AFK_.reason:
             await event.client.send_message(
                 BOTLOG_CHATID,
-                f"⪼ وضع السليب \nتم تشغيل وضع السليب، والسبب هو \n{AFK_.reason}",
+                f"❃ وضع السليب \nتم تشغيل وضع السليب، والسبب هو \n{AFK_.reason}",
             )
         else:
             await event.client.send_message(
                 BOTLOG_CHATID,
-                "⪼ وضع السليب \nتم تشغيل وضع السليب، بدون ذكر اي سبب",
+                "❃ وضع السليب \nتم تشغيل وضع السليب، بدون ذكر اي سبب",
             )
