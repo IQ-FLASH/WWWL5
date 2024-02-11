@@ -353,7 +353,7 @@ async def Hussein(event):
     for chat_username in chat_usernames:
         try:
             chat = await WWWL5.get_entity(chat_username)
-            await aljoker_nshr(WWWL5, seconds, chat.id, message, seconds)  # تمرير قيمة seconds هنا لكل مجموعة
+            await aljoker_nshr(WWWL5, seconds, chat.id, message, seconds)  
         except Exception as e:
             await edit_delete(
                 event, f"⌔∮ لا يمكن العثور على المجموعة أو الدردشة {chat_username}: {str(e)}"
