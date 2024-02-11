@@ -334,3 +334,96 @@ async def stopspamrz(event):
         delgvar("spamwork")
         return await edit_delete(event, "**⌔∮ تم بنجاح ايقاف التكرار **")
     return await edit_delete(event, "**⌔∮ عذرا لم يتم تفعيل التكرار بالاصل")
+
+
+@WWWL5.ar_cmd(pattern="نشر")
+async def Hussein(event):
+    await event.delete()
+    parameters = re.split(r'\s+', event.text.strip(), maxsplit=2)
+    if len(parameters) != 3:
+        return await edit_delete(
+            event, "⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️"
+        )
+    seconds = int(parameters[1])
+    chat_usernames = parameters[2].split()
+    WWWL5 = event.client
+    global yaAli
+    yaAli = True
+    message = await event.get_reply_message()
+    for chat_username in chat_usernames:
+        try:
+            chat = await WWWL5.get_entity(chat_username)
+            await aljoker_nshr(WWWL5, seconds, chat.id, message, seconds)  # تمرير قيمة seconds هنا لكل مجموعة
+        except Exception as e:
+            await edit_delete(
+                event, f"⌔∮ لا يمكن العثور على المجموعة أو الدردشة {chat_username}: {str(e)}"
+            )
+        await asyncio.sleep(1)
+    
+async def aljoker_allnshr(WWWL5, sleeptimet, message):
+    global yaAli
+    yaAli = True
+    aljoker_chats = await WWWL5.get_dialogs()
+    while yaAli:
+        for chat in aljoker_chats:
+            if chat.is_group:
+                try:
+                    if message.media:
+                        await WWWL5.send_file(chat.id, message.media, caption=message.text)
+                    else:
+                        await WWWL5.send_message(chat.id, message.text)
+                except Exception as e:
+                    print(f"Error in sending message to chat {chat.id}: {e}")
+        await asyncio.sleep(sleeptimet)
+@WWWL5.ar_cmd(pattern="نشر_كروبات")
+async def Hussein(event):
+    await event.delete()
+    seconds = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
+    message =  await event.get_reply_message()
+    try:
+        sleeptimet = int(seconds[0])
+    except Exception:
+        return await edit_delete(
+            event, "⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️"
+        )
+    WWWL5 = event.client
+    global yaAli
+    yaAli = True
+    await aljoker_allnshr(WWWL5, sleeptimet, message)
+super_groups = ["super", "سوبر"]
+async def aljoker_supernshr(WWWL5, sleeptimet, message):
+    global yaAli
+    yaAli = True
+    aljoker_chats = await WWWL5.get_dialogs()
+    while yaAli:
+        for chat in aljoker_chats:
+            chat_title_lower = chat.title.lower()
+            if chat.is_group and any(keyword in chat_title_lower for keyword in super_groups):
+                try:
+                    if message.media:
+                        await WWWL5.send_file(chat.id, message.media, caption=message.text)
+                    else:
+                        await WWWL5.send_message(chat.id, message.text)
+                except Exception as e:
+                    print(f"Error in sending message to chat {chat.id}: {e}")
+        await asyncio.sleep(sleeptimet)
+@WWWL5.ar_cmd(pattern="سوبر")
+async def Hussein(event):
+    await event.delete()
+    seconds = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
+    message =  await event.get_reply_message()
+    try:
+        sleeptimet = int(seconds[0])
+    except Exception:
+        return await edit_delete(
+            event, "⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️"
+        )
+    WWWL5 = event.client
+    global yaAli
+    yaAli = True
+    await aljoker_supernshr(WWWL5, sleeptimet, message)
+@WWWL5.ar_cmd(pattern="ايقاف (النشر|نشر)")
+async def stop_aljoker(event):
+    global yaAli
+    yaAli = False
+    await event.edit("**❃ تم ايقاف النشر التلقائي بنجاح ✓** ")

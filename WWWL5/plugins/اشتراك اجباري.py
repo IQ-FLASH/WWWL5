@@ -61,7 +61,7 @@ async def fsub(event):
         )
 
 
-@WWWL5.ar_cmd(pattern="تعطيل الاجباري")
+@WWWL5.ar_cmd(pattern="تعطيل الاجباري ?(.*)")
 async def removefsub(event):
     rm_fsub(event.chat_id)
     await edit_or_reply(event, "**- تم بنجاح تعطيل الاشتراك الاجباري في هذه المجموعة**")
